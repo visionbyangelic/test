@@ -359,13 +359,13 @@ a
 }
 .connectome-visual
 {
-   background: radial-gradient(circle at 50% 45%,#28453f 0,#152321 28%,#0c1113 70%)
+   background: radial-gradient(circle at 50% 45%,#4d3a5f 0,#211b29 28%,#111015 70%)
 }
 .node-field
 {
    position: absolute;
    inset: 0;
-   background-image: radial-gradient(circle,#b4d8c9 1px,transparent 2px),linear-gradient(27deg,transparent 48%,rgba(153,203,184,.24) 49%,transparent 50%),linear-gradient(145deg,transparent 48%,rgba(153,203,184,.18) 49%,transparent 50%);
+   background-image: radial-gradient(circle,#cbb6e8 1px,transparent 2px),linear-gradient(27deg,transparent 48%,rgba(153,203,184,.24) 49%,transparent 50%),linear-gradient(145deg,transparent 48%,rgba(153,203,184,.18) 49%,transparent 50%);
    background-size: 39px 39px,100% 100%,100% 100%;
    mask-image: radial-gradient(ellipse,black 20%,transparent 75%);
    opacity: .8
@@ -377,16 +377,16 @@ a
    bottom: 22px;
    font: 700 clamp(22px,3vw,39px)/.95 Manrope,sans-serif;
    letter-spacing: -.06em;
-   color: #d7e8df
+   color: #f0e7f4
 }
 .geometry-visual
 {
-   background: radial-gradient(ellipse at 60% 45%,#363b52,#171a24 55%,#101216)
+   background: radial-gradient(ellipse at 60% 45%,#43364f,#1d1922 55%,#101216)
 }
 .geometry-visual .visual-word
 {
    font-size: 54px;
-   color: #d4d8ed
+   color: #e1d6ed
 }
 .geometry-lines
 {
@@ -609,11 +609,11 @@ a
 {
    font-size: 22px;
    margin-left: 12px;
-   color: #9cbeb4
+   color: #c5a6ec
 }
 .mark-dot
 {
-   color: #9cbeb4
+   color: #c5a6ec
 }
 .writing-card h3
 {
@@ -698,13 +698,13 @@ a
 }
 .shape-cube
 {
-   border: 1px solid #8ca99f;
+   border: 1px solid #b99add;
    transform: rotate(30deg) skew(-10deg);
-   box-shadow: 18px 18px 0 -1px transparent,18px 18px 0 0 #4f6b63
+   box-shadow: 18px 18px 0 -1px transparent,18px 18px 0 0 #705b7f
 }
 .shape-orbit
 {
-   border: 1px solid #a3a6bf;
+   border: 1px solid #c3a8d8;
    border-radius: 50%;
    transform: rotate(-30deg) scaleY(.45)
 }
@@ -713,13 +713,13 @@ a
    content: "";
    position: absolute;
    inset: 20px -10px;
-   border: 1px solid #a3a6bf;
+   border: 1px solid #c3a8d8;
    border-radius: 50%;
    transform: rotate(55deg)
 }
 .shape-lines
 {
-   background: repeating-linear-gradient(135deg,transparent 0 9px,#7c9c92 10px 11px,transparent 12px 19px);
+   background: repeating-linear-gradient(135deg,transparent 0 9px,#a98bc7 10px 11px,transparent 12px 19px);
    mask-image: linear-gradient(90deg,transparent,black)
 }
 .about-layout
@@ -872,7 +872,7 @@ a
 .calendar-icon
 {
    font-size: 32px;
-   color: #8cb6aa
+   color: #b99add
 }
 .calendar-empty h3
 {

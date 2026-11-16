@@ -986,3 +986,25 @@
   .home-explore > div { grid-template-columns: 1fr; max-width: none; }
   .home-explore a { font-size: 19px; }
 }
+
+
+/* Responsive embedded demonstration for research projects. */
+.research-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 12px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid var(--line);
+}
+.research-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.research-video-link {
+  margin-top: 12px;
+}

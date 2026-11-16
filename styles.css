@@ -1,29 +1,29 @@
 :root
 {
-   --bg: #08090b;
-   --panel: #101216;
-   --panel2: #14171c;
-   --text: #f2f1ed;
-   --muted: #9a9da5;
-   --faint: #62666f;
-   --line: rgba(255,255,255,.12);
-   --accent: #d8e7e3;
-   --glow: rgba(135,204,191,.18);
-   --header: rgba(8,9,11,.82);
+   --bg: #100f14;
+   --panel: #18161e;
+   --panel2: #211e29;
+   --text: #eee9e2;
+   --muted: #aaa3b1;
+   --faint: #716a79;
+   --line: rgba(238,233,226,.13);
+   --accent: #c7a6ec;
+   --glow: rgba(155,119,207,.17);
+   --header: rgba(16,15,20,.84);
    color-scheme: dark
 }
 :root[data-theme="light"]
 {
-   --bg: #f4f3ef;
-   --panel: #eae9e3;
-   --panel2: #e2e1da;
-   --text: #17191b;
-   --muted: #555b60;
-   --faint: #85898b;
-   --line: rgba(20,25,28,.15);
-   --accent: #243e3a;
-   --glow: rgba(73,139,126,.13);
-   --header: rgba(244,243,239,.86);
+   --bg: #f1eee9;
+   --panel: #e8e3e0;
+   --panel2: #ded7dc;
+   --text: #211d25;
+   --muted: #625a67;
+   --faint: #89808d;
+   --line: rgba(38,28,43,.16);
+   --accent: #75549b;
+   --glow: rgba(135,91,170,.12);
+   --header: rgba(241,238,233,.88);
    color-scheme: light
 }
 *
@@ -79,7 +79,7 @@ a
 }
 .wordmark span
 {
-   color: #8cb6aa
+   color: #b99add
 }
 .desktop-nav
 {
@@ -160,8 +160,8 @@ a
    height: 6px;
    width: 6px;
    border-radius: 50%;
-   background: #83b7a8;
-   box-shadow: 0 0 12px #83b7a8
+   background: #c5a6ec;
+   box-shadow: 0 0 12px #b99add
 }
 .hero h1
 {
@@ -174,7 +174,7 @@ a
 {
    font-family: Georgia,serif;
    font-weight: 400;
-   color: #9cbeb4
+   color: #c5a6ec
 }
 .hero-intro
 {
@@ -808,7 +808,7 @@ a
 }
 .now-date
 {
-   color: #8cb6aa
+   color: #b99add
 }
 .now-main h3
 {
@@ -1173,4 +1173,150 @@ a
      animation-duration: .01ms!important;
      transition-duration: .01ms!important
   }
+}
+
+
+/* Signature sculpture: an editorial object, not a simulated neural network. */
+.signature-art {
+  min-height: 520px;
+  height: min(44vw, 580px);
+  overflow: hidden;
+  border-color: rgba(197, 166, 236, .2);
+  background:
+    radial-gradient(ellipse at 52% 45%, rgba(125, 91, 157, .17), transparent 48%),
+    radial-gradient(ellipse at 72% 80%, rgba(191, 151, 111, .08), transparent 38%),
+    linear-gradient(145deg, #17141d, #100f14 68%);
+  isolation: isolate;
+}
+.signature-art::before {
+  content: "";
+  position: absolute;
+  inset: 8% 7%;
+  border: 1px solid rgba(238, 233, 226, .07);
+  border-radius: 50%;
+  transform: rotate(-23deg) scaleY(.72);
+  pointer-events: none;
+}
+.signature-art::after {
+  background: linear-gradient(145deg, rgba(255,255,255,.045), transparent 38%, rgba(197,166,236,.035));
+}
+.signature-art canvas {
+  position: absolute;
+  inset: 4% 0 7%;
+  width: 100%;
+  height: 89%;
+  z-index: 1;
+  touch-action: pan-y;
+}
+.signature-art .art-label {
+  color: rgba(238,233,226,.6);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.signature-art .art-label span {
+  color: #c5a6ec;
+}
+.sculpture-index {
+  position: absolute;
+  z-index: 3;
+  top: 25%;
+  left: 7%;
+  display: grid;
+  gap: 3px;
+  color: rgba(238,233,226,.48);
+  font: 9px "DM Mono", monospace;
+  letter-spacing: .14em;
+  pointer-events: none;
+}
+.sculpture-index strong {
+  color: rgba(238,233,226,.9);
+  font: 400 35px/1 Georgia, serif;
+  letter-spacing: -.06em;
+}
+.sculpture-index i {
+  display: block;
+  width: 30px;
+  height: 1px;
+  margin: 8px 0;
+  background: #c5a6ec;
+}
+.sculpture-links {
+  position: absolute;
+  z-index: 4;
+  right: 5.5%;
+  top: 27%;
+  width: min(180px, 36%);
+  display: grid;
+  gap: 0;
+}
+.sculpture-links a {
+  display: grid;
+  grid-template-columns: 22px 1fr 12px;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(238,233,226,.14);
+  color: rgba(238,233,226,.76);
+  font: 11px Manrope, sans-serif;
+  transition: color .25s ease, padding .35s cubic-bezier(.22,1,.36,1), border-color .25s ease;
+}
+.sculpture-links a span {
+  color: #b99add;
+  font: 9px "DM Mono", monospace;
+}
+.sculpture-links a i {
+  color: rgba(238,233,226,.42);
+  font-style: normal;
+  transition: transform .3s ease, color .3s ease;
+}
+.sculpture-links a:hover,
+.sculpture-links a:focus-visible {
+  color: #fff;
+  padding-left: 7px;
+  border-color: rgba(197,166,236,.55);
+  outline: none;
+}
+.sculpture-links a:hover i,
+.sculpture-links a:focus-visible i {
+  color: #c5a6ec;
+  transform: translate(2px,-2px);
+}
+.signature-art .art-caption {
+  color: rgba(238,233,226,.46);
+  font-size: 8px;
+  letter-spacing: .13em;
+}
+.signature-art .art-caption span:last-child {
+  color: #c5a6ec;
+}
+@media (max-width: 1100px) {
+  .signature-art { height: 480px; }
+  .sculpture-links { right: 4%; width: 38%; }
+}
+@media (max-width: 760px) {
+  .signature-art {
+    min-height: 440px;
+    height: 440px;
+    margin-top: 35px;
+  }
+  .signature-art canvas { inset: 5% 0 12%; height: 83%; }
+  .sculpture-index { top: 19%; left: 6%; }
+  .sculpture-links {
+    top: auto;
+    right: 6%;
+    bottom: 58px;
+    width: 54%;
+  }
+  .sculpture-links a { padding: 8px 0; font-size: 10px; }
+  .signature-art .art-caption { left: 14px; right: 14px; bottom: 16px; }
+}
+@media (max-width: 390px) {
+  .signature-art { min-height: 410px; height: 410px; }
+  .sculpture-links { width: 58%; bottom: 54px; }
+  .sculpture-links a { font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sculpture-links a,
+  .sculpture-links a i { transition: none; }
 }

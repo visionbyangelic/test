@@ -1256,3 +1256,69 @@ body.lightbox-open { overflow: hidden; }
   .gallery-page .credential-card-tall,
   .gallery-page .credential-card-wide { height: 140px; }
 }
+
+
+/* Gallery: a horizontal landscape filmstrip, with full-size tap-through. */
+.gallery-page .credential-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px 18px;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--faint) transparent;
+}
+.gallery-page .credential-card,
+.gallery-page .credential-card-tall,
+.gallery-page .credential-card-wide {
+  flex: 0 0 clamp(230px, 29vw, 340px);
+  width: clamp(230px, 29vw, 340px);
+  height: 205px;
+  min-height: 0;
+  padding: 14px;
+  box-sizing: border-box;
+  grid-column: auto;
+  grid-row: auto;
+  scroll-snap-align: start;
+}
+.gallery-page .credential-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.gallery-page .credential-card:hover img { transform: none; }
+.gallery-page .credential-grid::-webkit-scrollbar { height: 5px; }
+.gallery-page .credential-grid::-webkit-scrollbar-track { background: transparent; }
+.gallery-page .credential-grid::-webkit-scrollbar-thumb {
+  background: var(--faint);
+  border-radius: 10px;
+}
+@media (max-width: 760px) {
+  .gallery-page .credential-grid { gap: 11px; }
+  .gallery-page .credential-card,
+  .gallery-page .credential-card-tall,
+  .gallery-page .credential-card-wide {
+    flex-basis: 78vw;
+    width: 78vw;
+    max-width: 310px;
+    height: 190px;
+    padding: 12px;
+  }
+}
+@media (max-width: 430px) {
+  .gallery-page .credential-card,
+  .gallery-page .credential-card-tall,
+  .gallery-page .credential-card-wide {
+    flex-basis: 82vw;
+    width: 82vw;
+    height: 178px;
+  }
+}

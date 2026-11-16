@@ -131,8 +131,8 @@
     const scale = Math.min(width, height) * (width < 520 ? 0.225 : 0.245);
     const quads = [];
     const bands = 2;
-    const steps = 116;
-    const across = 10;
+    const steps = 84;
+    const across = 8;
 
     for (let band = 0; band < bands; band += 1) {
       const variant = band * 0.47;
@@ -222,10 +222,6 @@
       }
     }
 
-    if (!reducedMotion) {
-      rotation += 0.0018;
-      frame = requestAnimationFrame(draw);
-    }
   }
 
   function animate(time) {
@@ -236,7 +232,9 @@
     lastTime = time;
     pointerX += (targetX - pointerX) * 0.055;
     pointerY += (targetY - pointerY) * 0.055;
+    rotation += 0.0018;
     draw(time);
+    frame = requestAnimationFrame(animate);
   }
 
   canvas.addEventListener("pointermove", (event) => {

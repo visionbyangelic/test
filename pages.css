@@ -1008,3 +1008,78 @@
 .research-video-link {
   margin-top: 12px;
 }
+
+/* Research project imagery */
+.research-project-image {
+  margin: 24px 0 28px;
+  width: 100%;
+  max-height: 420px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+.research-project-image img {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
+.research-video-thumbnail {
+  display: block;
+  position: relative;
+  margin-top: 22px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #111;
+}
+.research-video-thumbnail img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  opacity: .88;
+  transition: opacity .25s ease, transform .5s ease;
+}
+.research-video-thumbnail:hover img { opacity: 1; transform: scale(1.015); }
+.research-video-thumbnail span {
+  display: block;
+  padding: 12px 14px;
+  color: var(--text);
+  font: 9px "DM Mono", monospace;
+  letter-spacing: .1em;
+}
+/* Writing archive */
+.writing-page { max-width: 1120px; }
+.ras-feature {
+  margin: 34px 0 58px;
+  padding: clamp(26px, 5vw, 54px);
+  border: 1px solid var(--line);
+  background: linear-gradient(125deg, rgba(128, 91, 154, .13), transparent 62%), var(--panel);
+}
+.ras-feature-copy { max-width: 790px; }
+.ras-feature h2 {
+  margin: 20px 0 16px;
+  font: 600 clamp(38px, 7vw, 76px)/.98 Manrope, sans-serif;
+  letter-spacing: -.075em;
+}
+.ras-feature h2 em { font-family: Georgia, serif; font-weight: 400; }
+.ras-feature p { max-width: 720px; color: var(--muted); font-size: 13px; line-height: 1.85; }
+.ras-feature .ras-principle { color: var(--text); font: italic 17px Georgia, serif; margin-top: 22px; }
+.ras-social-links { display: flex; flex-wrap: wrap; gap: 12px 26px; margin-top: 30px; }
+.ras-social-links a,.writing-profile-link>a {
+  color: var(--text); font: 9px "DM Mono", monospace; letter-spacing: .08em;
+  text-decoration: underline; text-underline-offset: 5px;
+}
+.writing-section { margin-top: 54px; }
+.writing-intro { max-width: 760px; margin: 18px 0 8px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.writing-profile-link {
+  display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  padding: 22px 2px; border-bottom: 1px solid var(--line);
+}
+.writing-profile-link div { display: grid; gap: 7px; }
+.writing-profile-link strong { font: 500 19px Manrope, sans-serif; }
+.writing-profile-link span { color: var(--muted); font-size: 11px; }
+@media(max-width: 640px) {
+  .writing-profile-link { align-items: flex-start; flex-direction: column; }
+  .ras-social-links { flex-direction: column; align-items: flex-start; }
+}

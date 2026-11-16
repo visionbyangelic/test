@@ -12,3 +12,9 @@
 .text-entry h2 a{color:var(--text);text-decoration:none}
 .text-entry h2 a:hover{opacity:.68}
 @media(max-width:680px){.blender-gallery{grid-template-columns:1fr}.gallery-wide{grid-column:auto}.gallery-card img,.gallery-wide img{aspect-ratio:4/3}}
+
+/* Minimal homepage directory */
+.home-directory{padding-top:28px;padding-bottom:92px}.home-directory-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:18px;border-top:1px solid var(--line)}.home-directory-grid a{display:flex;align-items:center;gap:14px;padding:20px 10px;border-bottom:1px solid var(--line);color:var(--text);transition:opacity .2s}.home-directory-grid a:hover{opacity:.65}.home-directory-grid span{font:9px "DM Mono";color:var(--muted)}.home-directory-grid strong{font:500 16px Manrope}.home-directory-grid i{font-style:normal;margin-left:auto;color:var(--muted)}
+/* Editorial, text-first writing archive */
+.text-archive{border-top:1px solid var(--line)}.text-article{display:grid;grid-template-columns:1fr auto;gap:12px;padding:25px 4px;border-bottom:1px solid var(--line);align-items:center}.text-article .article-meta{margin-bottom:9px}.text-article h2{font:500 clamp(19px,2.5vw,25px) Manrope;letter-spacing:-.035em;margin:0 0 7px}.text-article p{font-size:12px;color:var(--muted);line-height:1.7;margin:0;max-width:650px}.text-article .article-open{font:9px "DM Mono";letter-spacing:.08em;color:var(--muted);white-space:nowrap}
+@media(max-width:680px){.home-directory-grid{grid-template-columns:1fr 1fr}.home-directory-grid a{padding:17px 5px}.home-directory-grid strong{font-size:14px}.text-article{grid-template-columns:1fr}.text-article .article-open{margin-top:5px}}

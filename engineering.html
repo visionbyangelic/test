@@ -1,11 +1,277 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#08090b"><title>Engineering — Angelic Charles</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="pages.css"></head><body><div class="grain"></div><header class="site-header"><a class="wordmark" href="index.html">ANGELIC<span>.</span></a><nav class="desktop-nav"><a href="research.html">Research</a><a href="engineering.html">Engineering</a><a href="writing.html">Writing</a><a href="interests.html">Other interests</a><a href="about.html">About</a><a href="now.html">Now</a></nav><div class="header-actions"><button class="theme-toggle" id="themeToggle" aria-label="Switch theme"><span class="theme-icon">☼</span></button><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div></header><nav class="mobile-nav" id="mobileNav"><a href="research.html">Research</a><a href="engineering.html">Engineering</a><a href="writing.html">Writing</a><a href="interests.html">Other interests</a><a href="about.html">About</a><a href="now.html">Now</a></nav><main class="inner-page section-wrap"><a class="back-link" href="index.html">← HOME</a><header class="page-intro"><div class="section-kicker">02 / BUILDING</div><h1>Engineering</h1><p>Technical skills and selected projects across machine learning, data, software and computer vision.</p></header><section class="research-subsection"><div class="subsection-heading"><span>TECHNICAL SKILLS</span></div><div class="research-stack"><div><b>Neuro & Simulation</b><p>Brian2, MuJoCo, flygym, snnTorch, MNE-Python, FreeSurfer</p></div><div><b>Machine Learning</b><p>PyTorch, TensorFlow, Scikit-Learn, PPO, Spiking Networks</p></div><div><b>Languages</b><p>Python, SQL, JavaScript, TypeScript, C++, Java</p></div><div><b>Systems & Tools</b><p>Blender 3D, FastAPI, Streamlit, Docker, Git, Arduino</p></div></div></section>
-<section class="research-subsection"><div class="subsection-heading"><span>SELECTED PROJECTS</span></div><div class="engineering-projects">
-<a href="https://github.com/visionbyangelic/Multimodal-Emotion-Recognition" target="_blank"><span>01 / MACHINE LEARNING</span><h3>Emotiwave — Multimodal Emotion Recognition</h3><p>Research-focused multimodal emotion recognition using audio and visual data, with interpretable fusion and missing-modality robustness.</p><i>VIEW PROJECT ↗</i></a>
-<a href="https://github.com/visionbyangelic/Neuro-Fatigue-Prediction" target="_blank"><span>02 / DEEP LEARNING · EEG</span><h3>Neuro-Fatigue Predictor</h3><p>EEG time-series processing with MNE-Python and a 1D-CNN fatigue classification pipeline.</p><i>VIEW PROJECT ↗</i></a>
-<a href="https://github.com/visionbyangelic/nigerian-job-market-analyser" target="_blank"><span>03 / GENERATIVE AI</span><h3>Nigerian Tech Job Market Analyser</h3><p>A multi-agent GenAI system that analyses job postings, surfaces in-demand skills and salary trends, and produces career strategy reports.</p><i>VIEW PROJECT ↗</i></a>
-<a href="https://github.com/visionbyangelic/ASL_to_text" target="_blank"><span>04 / COMPUTER VISION</span><h3>Mochi — ASL to Text</h3><p>A real-time American Sign Language to text chat application using hand landmarks and CNN classification.</p><i>VIEW PROJECT ↗</i></a>
-<a href="https://github.com/visionbyangelic/computer-vision-projects" target="_blank"><span>05 / COMPUTER VISION</span><h3>Computer Vision Projects</h3><p>A collection of real-time image-processing experiments: hand tracking, gesture recognition, object tracking and augmented overlays.</p><i>VIEW PROJECT ↗</i></a>
-<a href="https://github.com/visionbyangelic/data-projects" target="_blank"><span>06 / DATA SCIENCE</span><h3>Data Projects</h3><p>Exploratory analysis, statistical workflows, visualisation and relational database design.</p><i>VIEW PROJECT ↗</i></a>
-<a href="https://github.com/visionbyangelic/Oral-Sight-V1" target="_blank"><span>07 / APPLIED ML</span><h3>OralSight</h3><p>An AI oral-lesion screening prototype using MobileNetV2 and Grad-CAM interpretability.</p><i>VIEW PROJECT ↗</i></a>
-<a href="https://github.com/visionbyangelic/other-projects" target="_blank"><span>08 / WEB EXPERIMENTS</span><h3>Web & Python Experiments</h3><p>A collection of small interfaces, canvas animations, interactive tools and Python experiments.</p><i>VIEW PROJECT ↗</i></a>
-</div></section></main><footer class="site-footer section-wrap"><a class="wordmark" href="index.html">ANGELIC<span>.</span></a><span>BUILT WITH CURIOSITY · © <span id="year"></span></span><a href="index.html">HOME ↑</a></footer><script src="pages.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#08090b">
+    <title>
+      Engineering — Angelic Charles
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+  </head>
+  <body>
+    <div class="grain">
+    </div>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">
+        ANGELIC
+        <span>
+          .
+        </span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="research.html">
+          Research
+        </a>
+        <a href="engineering.html">
+          Engineering
+        </a>
+        <a href="writing.html">
+          Writing
+        </a>
+        <a href="interests.html">
+          Other interests
+        </a>
+        <a href="about.html">
+          About
+        </a>
+        <a href="now.html">
+          Now
+        </a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <span class="theme-icon">
+            ☼
+          </span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <span>
+          </span>
+          <span>
+          </span>
+        </button>
+      </div>
+    </header>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="research.html">
+        Research
+      </a>
+      <a href="engineering.html">
+        Engineering
+      </a>
+      <a href="writing.html">
+        Writing
+      </a>
+      <a href="interests.html">
+        Other interests
+      </a>
+      <a href="about.html">
+        About
+      </a>
+      <a href="now.html">
+        Now
+      </a>
+    </nav>
+    <main class="inner-page section-wrap">
+      <a class="back-link" href="index.html">
+        ← HOME
+      </a>
+      <header class="page-intro">
+        <div class="section-kicker">
+          02 / BUILDING
+        </div>
+        <h1>
+          Engineering
+        </h1>
+        <p>
+          Technical skills and selected projects across machine learning, data, software and computer vision.
+        </p>
+      </header>
+      <section class="research-subsection">
+        <div class="subsection-heading">
+          <span>
+            TECHNICAL SKILLS
+          </span>
+        </div>
+        <div class="research-stack">
+          <div>
+            <b>
+              Neuro & Simulation
+            </b>
+            <p>
+              Brian2, MuJoCo, flygym, snnTorch, MNE-Python, FreeSurfer
+            </p>
+          </div>
+          <div>
+            <b>
+              Machine Learning
+            </b>
+            <p>
+              PyTorch, TensorFlow, Scikit-Learn, PPO, Spiking Networks
+            </p>
+          </div>
+          <div>
+            <b>
+              Languages
+            </b>
+            <p>
+              Python, SQL, JavaScript, TypeScript, C++, Java
+            </p>
+          </div>
+          <div>
+            <b>
+              Systems & Tools
+            </b>
+            <p>
+              Blender 3D, FastAPI, Streamlit, Docker, Git, Arduino
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="research-subsection">
+        <div class="subsection-heading">
+          <span>
+            SELECTED PROJECTS
+          </span>
+        </div>
+        <div class="engineering-projects">
+          <a href="https://github.com/visionbyangelic/Multimodal-Emotion-Recognition" target="_blank">
+            <span>
+              01 / MACHINE LEARNING
+            </span>
+            <h3>
+              Emotiwave — Multimodal Emotion Recognition
+            </h3>
+            <p>
+              Research-focused multimodal emotion recognition using audio and visual data, with interpretable fusion and missing-modality robustness.
+            </p>
+            <i>
+              VIEW PROJECT ↗
+            </i>
+          </a>
+          <a href="https://github.com/visionbyangelic/Neuro-Fatigue-Prediction" target="_blank">
+            <span>
+              02 / DEEP LEARNING · EEG
+            </span>
+            <h3>
+              Neuro-Fatigue Predictor
+            </h3>
+            <p>
+              EEG time-series processing with MNE-Python and a 1D-CNN fatigue classification pipeline.
+            </p>
+            <i>
+              VIEW PROJECT ↗
+            </i>
+          </a>
+          <a href="https://github.com/visionbyangelic/nigerian-job-market-analyser" target="_blank">
+            <span>
+              03 / GENERATIVE AI
+            </span>
+            <h3>
+              Nigerian Tech Job Market Analyser
+            </h3>
+            <p>
+              A multi-agent GenAI system that analyses job postings, surfaces in-demand skills and salary trends, and produces career strategy reports.
+            </p>
+            <i>
+              VIEW PROJECT ↗
+            </i>
+          </a>
+          <a href="https://github.com/visionbyangelic/ASL_to_text" target="_blank">
+            <span>
+              04 / COMPUTER VISION
+            </span>
+            <h3>
+              Mochi — ASL to Text
+            </h3>
+            <p>
+              A real-time American Sign Language to text chat application using hand landmarks and CNN classification.
+            </p>
+            <i>
+              VIEW PROJECT ↗
+            </i>
+          </a>
+          <a href="https://github.com/visionbyangelic/computer-vision-projects" target="_blank">
+            <span>
+              05 / COMPUTER VISION
+            </span>
+            <h3>
+              Computer Vision Projects
+            </h3>
+            <p>
+              A collection of real-time image-processing experiments: hand tracking, gesture recognition, object tracking and augmented overlays.
+            </p>
+            <i>
+              VIEW PROJECT ↗
+            </i>
+          </a>
+          <a href="https://github.com/visionbyangelic/data-projects" target="_blank">
+            <span>
+              06 / DATA SCIENCE
+            </span>
+            <h3>
+              Data Projects
+            </h3>
+            <p>
+              Exploratory analysis, statistical workflows, visualisation and relational database design.
+            </p>
+            <i>
+              VIEW PROJECT ↗
+            </i>
+          </a>
+          <a href="https://github.com/visionbyangelic/Oral-Sight-V1" target="_blank">
+            <span>
+              07 / APPLIED ML
+            </span>
+            <h3>
+              OralSight
+            </h3>
+            <p>
+              An AI oral-lesion screening prototype using MobileNetV2 and Grad-CAM interpretability.
+            </p>
+            <i>
+              VIEW PROJECT ↗
+            </i>
+          </a>
+          <a href="https://github.com/visionbyangelic/other-projects" target="_blank">
+            <span>
+              08 / WEB EXPERIMENTS
+            </span>
+            <h3>
+              Web & Python Experiments
+            </h3>
+            <p>
+              A collection of small interfaces, canvas animations, interactive tools and Python experiments.
+            </p>
+            <i>
+              VIEW PROJECT ↗
+            </i>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer section-wrap">
+      <a class="wordmark" href="index.html">
+        ANGELIC
+        <span>
+          .
+        </span>
+      </a>
+      <span>
+        BUILT WITH CURIOSITY · ©
+        <span id="year">
+        </span>
+      </span>
+      <a href="index.html">
+        HOME ↑
+      </a>
+    </footer>
+    <script src="pages.js">
+    </script>
+  </body>
+</html>

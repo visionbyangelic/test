@@ -64,7 +64,7 @@ body.is-leaving::before {
 
 @keyframes text-glint {
   0%, 78%, 100% { text-shadow: 0 0 transparent; }
-  86% { text-shadow: 0 0 28px rgba(156, 190, 180, .22); }
+  86% { text-shadow: 0 0 28px rgba(197, 166, 236, .22); }
 }
 
 [data-reveal] {
@@ -98,7 +98,7 @@ body.is-leaving::before {
 
 .hero-art:hover {
   transform: translateY(-3px);
-  border-color: rgba(156, 190, 180, .34);
+  border-color: rgba(197, 166, 236, .34);
 }
 
 .hero-art::before {
@@ -108,7 +108,7 @@ body.is-leaving::before {
   z-index: 1;
   pointer-events: none;
   background: radial-gradient(340px circle at var(--pointer-x) var(--pointer-y),
-    rgba(151, 207, 190, .13), transparent 64%);
+    rgba(175, 137, 216, .13), transparent 64%);
 }
 
 .desktop-nav a,
@@ -176,8 +176,8 @@ body.is-leaving::before {
 }
 
 @keyframes status-breathe {
-  0%, 100% { box-shadow: 0 0 7px rgba(131, 183, 168, .35); }
-  50% { box-shadow: 0 0 17px rgba(131, 183, 168, .8); }
+  0%, 100% { box-shadow: 0 0 7px rgba(185, 154, 221, .35); }
+  50% { box-shadow: 0 0 17px rgba(185, 154, 221, .8); }
 }
 
 /* Custom cursor is a small halo, never a replacement for the native pointer on touch. */
@@ -188,7 +188,7 @@ body.is-leaving::before {
   left: 0;
   width: 22px;
   height: 22px;
-  border: 1px solid rgba(156, 190, 180, .48);
+  border: 1px solid rgba(197, 166, 236, .48);
   border-radius: 50%;
   pointer-events: none;
   opacity: 0;
@@ -202,8 +202,8 @@ body.is-leaving::before {
 .cursor-halo.is-hovering {
   width: 38px;
   height: 38px;
-  background: rgba(156, 190, 180, .08);
-  border-color: rgba(156, 190, 180, .8);
+  background: rgba(197, 166, 236, .08);
+  border-color: rgba(197, 166, 236, .8);
 }
 
 @media (pointer: fine) and (min-width: 900px) {

@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#08090b">
-    <title>
-      Research — Angelic Charles
-    </title>
+    <title>Research & Systems — Angelic Charles</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,198 +13,316 @@
     <link rel="stylesheet" href="motion.css">
   </head>
   <body>
-    <div class="grain">
-    </div>
+    <div class="grain"></div>
     <header class="site-header">
       <a class="wordmark" href="index.html">
         ANGELIC
-        <span>
-          .
-        </span>
+        <span>.</span>
       </a>
-      <nav class="desktop-nav">
-        <a href="research.html">
-          Research
-        </a>
-        <a href="engineering.html">
-          Engineering
-        </a>
-        <a href="writing.html">
-          Writing
-        </a>
-        <a href="interests.html">
-          Other interests
-        </a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">
-          About
-        </a>
-        <a href="now.html">
-          Now
-        </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="research.html" class="active">Research & Systems</a>
+        <a href="writing.html">Writing</a>
+        <a href="gallery.html">Visual Archive</a>
+        <a href="about.html">About</a>
       </nav>
       <div class="header-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
-          <span class="theme-icon">
-            ☼
-          </span>
+          <span class="theme-icon">☼</span>
         </button>
         <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
-          <span>
-          </span>
-          <span>
-          </span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </header>
-    <nav class="mobile-nav" id="mobileNav">
-      <a href="research.html">
-        Research
-      </a>
-      <a href="engineering.html">
-        Engineering
-      </a>
-      <a href="writing.html">
-        Writing
-      </a>
-      <a href="interests.html">
-        Other interests
-      </a>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">
-        About
-      </a>
-      <a href="now.html">
-        Now
-      </a>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="research.html">Research & Systems</a>
+      <a href="writing.html">Writing</a>
+      <a href="gallery.html">Visual Archive</a>
+      <a href="about.html">About</a>
     </nav>
+
     <main class="inner-page section-wrap">
-      <a class="back-link" href="index.html">
-        ← HOME
-      </a>
+      <a class="back-link" href="index.html">← HOME</a>
       <header class="page-intro">
         <div class="section-kicker">
-          01 / RESEARCH & CONNECTOMES
+          01 / INVESTIGATION & SYSTEMS
         </div>
         <h1>
-          Research<span style="color:var(--accent);">.</span>
+          Research & Systems<span style="color:var(--accent);">.</span>
         </h1>
         <p>
-          Computational neuroscience, biological connectome emulation, embodied physical simulations, and neural representation geometry.
+          Computational neuroscience, biological connectome emulation, embodied physics simulations, and multimodal machine learning architectures.
         </p>
         <div class="pill-row" style="margin-top:20px;">
-          <span class="badge-chip active">● Ongoing Simulation</span>
-          <span class="badge-chip metric">FlyWire & BANC Connectomes</span>
-          <span class="badge-chip accepted">Oral Presentation · NSN 2026</span>
-          <span class="badge-chip">MuJoCo Physics</span>
+          <a href="#connectomes" class="badge-chip active">● Connectome Emulation</a>
+          <a href="#engineering" class="badge-chip metric">Systems, ML & Repos</a>
+          <a href="#conferences" class="badge-chip accepted">Conferences & Talks</a>
         </div>
       </header>
-      <div class="research-feature-list">
-        <article class="research-feature">
-          <div class="feature-top">
-            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
-              <span class="badge-chip active">● 01 / ACTIVE RESEARCH</span>
-              <span class="badge-chip metric">EMBODIED CONNECTOME</span>
-            </div>
-            <a class="home-btn" style="padding:6px 14px;font-size:10px;" href="https://github.com/visionbyangelic/ConnectomeToBehaviour" target="_blank" rel="noreferrer">
-              GITHUB REPO ↗
-            </a>
-          </div>
-          <h2>
-            Connectome-to-Behavior: Closed-Loop Drosophila Emulation
-          </h2>
-          <div class="pill-row">
-            <span class="tech-pill">FlyWire Connectome</span>
-            <span class="tech-pill">BANC Dataset</span>
-            <span class="tech-pill">Brian2 Biophysics</span>
-            <span class="tech-pill">MuJoCo Physics</span>
-            <span class="tech-pill">flygym Body</span>
-            <span class="tech-pill">Closed-Loop Simulation</span>
-          </div>
-          <figure class="research-project-image">
-            <img src="assets/IMG_3152.jpeg" alt="Connectome-to-Behavior research project visual" loading="lazy">
-          </figure>
-          <p>
-            Closed-loop simulation coupling complete Drosophila connectomes (FlyWire, BANC) with Brian2 point-neuron dynamics and an embodied biomechanical body (MuJoCo, flygym) to evaluate emergent locomotion, grooming, and feeding without hand-coded motor rules.
-          </p>
-          <div class="research-detail">
-            <span class="research-detail-heading">RESEARCH QUESTION</span>
-            <p>Can natural coordinated behaviors emerge organically when real synaptic wiring is given simple biophysical rules and placed in an embodied physical simulation?</p>
-          </div>
-          <div class="research-detail research-plain-language">
-            <span class="research-detail-heading">IN PLAIN LANGUAGE</span>
-            <p>Take the full wiring diagram of a fruit fly's brain, switch it on inside a computer, give it a virtual body, and see whether it walks, cleans itself and feeds, without anyone programming those moves.</p>
-          </div>
-        </article>
-        <article class="research-feature">
-          <div class="feature-top">
-            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
-              <span class="badge-chip">02 / COMPLETED RESEARCH</span>
-              <span class="badge-chip metric">~80× SPATIAL INFO / SPIKE</span>
-            </div>
-            <a class="home-btn" style="padding:6px 14px;font-size:10px;" href="https://github.com/visionbyangelic/em-nav-representation-geometry" target="_blank" rel="noreferrer">
-              GITHUB REPO ↗
-            </a>
-          </div>
-          <h2>
-            EM-NAV: Geometry & Transferability of Spatial Representations
-          </h2>
-          <div class="pill-row">
-            <span class="tech-pill">Spiking Neural Networks</span>
-            <span class="tech-pill">Place Cells</span>
-            <span class="tech-pill">Metabolic Sparsity</span>
-            <span class="tech-pill">Zero-Shot Transfer</span>
-            <span class="tech-pill">Representation Geometry</span>
-          </div>
-          <a class="research-video-thumbnail" href="https://youtu.be/uxkBqr7Y4zE" target="_blank" rel="noreferrer" aria-label="Watch the EM-NAV project demonstration on YouTube">
-            <img src="https://img.youtube.com/vi/uxkBqr7Y4zE/hqdefault.jpg" alt="EM-NAV project demonstration video thumbnail" loading="lazy">
-            <span>WATCH DEMONSTRATION VIDEO ↗</span>
-          </a>
-          <p>
-            Computational study examining how biological constraints (spiking thresholds, metabolic sparsity penalties, and recurrence) shape internal spatial representations, place-cell-like geometry, and zero-shot transfer stability in embodied agents under severe sensory ambiguity.
-          </p>
-          <div class="research-detail">
-            <span class="research-detail-heading">KEY FINDING</span>
-            <p>Constrained spiking networks produced place-cell-like coding with up to ~80× higher spatial information per spike than unconstrained baselines, with stronger transfer into continuous 3D environments.</p>
-          </div>
-          <div class="research-detail research-plain-language">
-            <span class="research-detail-heading">IN PLAIN LANGUAGE</span>
-            <p>Give a virtual explorer a brain that must save energy and only fire when it counts, like a real one. Its inner "map" starts to look like the place cells in real brains, and it copes better when dropped somewhere new.</p>
-          </div>
-        </article>
-      </div>
-      <section class="research-subsection">
+
+      <!-- CHAPTER 01: PRIMARY RESEARCH -->
+      <section id="connectomes">
         <div class="subsection-heading">
-          <span>03 / OTHER RESEARCH & SYSTEMS</span>
+          <span>01 / COMPUTATIONAL NEUROSCIENCE & CONNECTOMES</span>
         </div>
-        <div class="research-feature" style="margin-top:20px;">
-          <div class="feature-top">
-            <span class="badge-chip accepted">ORAL PRESENTATION · NSN 2026</span>
-            <a class="home-btn" style="padding:6px 14px;font-size:10px;" href="https://github.com/visionbyangelic/Brain-Aging" target="_blank" rel="noreferrer">
-              GITHUB REPO ↗
+
+        <div class="research-feature-list" style="margin-top:20px;">
+          <article class="research-feature">
+            <div class="feature-top">
+              <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+                <span class="badge-chip active">● ACTIVE RESEARCH</span>
+                <span class="badge-chip metric">EMBODIED CONNECTOME</span>
+              </div>
+              <a class="home-btn" style="padding:6px 14px;font-size:10px;" href="https://github.com/visionbyangelic/ConnectomeToBehaviour" target="_blank" rel="noreferrer">
+                GITHUB REPO ↗
+              </a>
+            </div>
+            <h2>
+              Connectome-to-Behavior: Closed-Loop Drosophila Emulation
+            </h2>
+            <div class="pill-row">
+              <span class="tech-pill">FlyWire Connectome</span>
+              <span class="tech-pill">BANC Dataset</span>
+              <span class="tech-pill">Brian2 Biophysics</span>
+              <span class="tech-pill">MuJoCo Physics</span>
+              <span class="tech-pill">flygym Body</span>
+              <span class="tech-pill">Closed-Loop Simulation</span>
+            </div>
+            <figure class="research-project-image">
+              <img src="assets/IMG_3152.jpeg" alt="Connectome-to-Behavior research project visual" loading="lazy">
+            </figure>
+            <p>
+              Closed-loop simulation coupling complete Drosophila connectomes (FlyWire, BANC) with Brian2 point-neuron dynamics and an embodied biomechanical body (MuJoCo, flygym) to evaluate emergent locomotion, grooming, and feeding without hand-coded motor rules.
+            </p>
+            <div class="research-detail">
+              <span class="research-detail-heading">RESEARCH QUESTION</span>
+              <p>Can natural coordinated behaviors emerge organically when real synaptic wiring is given simple biophysical rules and placed in an embodied physical simulation?</p>
+            </div>
+            <div class="research-detail research-plain-language">
+              <span class="research-detail-heading">IN PLAIN LANGUAGE</span>
+              <p>Take the full wiring diagram of a fruit fly's brain, switch it on inside a computer, give it a virtual body, and see whether it walks, cleans itself and feeds, without anyone programming those moves.</p>
+            </div>
+          </article>
+
+          <article class="research-feature">
+            <div class="feature-top">
+              <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+                <span class="badge-chip">COMPLETED RESEARCH</span>
+                <span class="badge-chip metric">~80× SPATIAL INFO / SPIKE</span>
+              </div>
+              <a class="home-btn" style="padding:6px 14px;font-size:10px;" href="https://github.com/visionbyangelic/em-nav-representation-geometry" target="_blank" rel="noreferrer">
+                GITHUB REPO ↗
+              </a>
+            </div>
+            <h2>
+              EM-NAV: Geometry & Transferability of Spatial Representations
+            </h2>
+            <div class="pill-row">
+              <span class="tech-pill">Spiking Neural Networks</span>
+              <span class="tech-pill">Place Cells</span>
+              <span class="tech-pill">Metabolic Sparsity</span>
+              <span class="tech-pill">Zero-Shot Transfer</span>
+              <span class="tech-pill">Representation Geometry</span>
+            </div>
+            <a class="research-video-thumbnail" href="https://youtu.be/uxkBqr7Y4zE" target="_blank" rel="noreferrer" aria-label="Watch the EM-NAV project demonstration on YouTube">
+              <img src="https://img.youtube.com/vi/uxkBqr7Y4zE/hqdefault.jpg" alt="EM-NAV project demonstration video thumbnail" loading="lazy">
+              <span>WATCH DEMONSTRATION VIDEO ↗</span>
             </a>
-          </div>
-          <h2>Brain Aging Dynamics Modeling</h2>
-          <div class="pill-row">
-            <span class="tech-pill">Structural MRI</span>
-            <span class="tech-pill">Morphometrics</span>
-            <span class="tech-pill">OpenBHB Cohort</span>
-            <span class="tech-pill">OASIS-3 Dataset</span>
-            <span class="tech-pill">Biomarker Modeling</span>
-          </div>
-          <p>
-            Structural MRI morphometrics across OpenBHB and OASIS-3 cohorts. Models healthy brain volume trajectories across the lifespan to quantify the biological-versus-chronological age gap as a predictive health biomarker.
-          </p>
-          <div class="research-plain-language">
-            <span class="research-detail-heading">IN PLAIN LANGUAGE</span>
-            <p>Teach a computer what a healthy brain looks like at each age from MRI scans. Then show it someone new: if their brain looks older than their birthday says, that gap may be a clue to health.</p>
-          </div>
+            <p>
+              Computational study examining how biological constraints (spiking thresholds, metabolic sparsity penalties, and recurrence) shape internal spatial representations, place-cell-like geometry, and zero-shot transfer stability in embodied agents under severe sensory ambiguity.
+            </p>
+            <div class="research-detail">
+              <span class="research-detail-heading">KEY FINDING</span>
+              <p>Constrained spiking networks produced place-cell-like coding with up to ~80× higher spatial information per spike than unconstrained baselines, with stronger transfer into continuous 3D environments.</p>
+            </div>
+            <div class="research-detail research-plain-language">
+              <span class="research-detail-heading">IN PLAIN LANGUAGE</span>
+              <p>Give a virtual explorer a brain that must save energy and only fire when it counts, like a real one. Its inner "map" starts to look like the place cells in real brains, and it copes better when dropped somewhere new.</p>
+            </div>
+          </article>
+
+          <article class="research-feature">
+            <div class="feature-top">
+              <span class="badge-chip accepted">ORAL PRESENTATION · NSN 2026</span>
+              <a class="home-btn" style="padding:6px 14px;font-size:10px;" href="https://github.com/visionbyangelic/Brain-Aging" target="_blank" rel="noreferrer">
+                GITHUB REPO ↗
+              </a>
+            </div>
+            <h2>Brain Aging Dynamics Modeling</h2>
+            <div class="pill-row">
+              <span class="tech-pill">Structural MRI</span>
+              <span class="tech-pill">Morphometrics</span>
+              <span class="tech-pill">OpenBHB Cohort</span>
+              <span class="tech-pill">OASIS-3 Dataset</span>
+              <span class="tech-pill">Biomarker Modeling</span>
+            </div>
+            <p>
+              Structural MRI morphometrics across OpenBHB and OASIS-3 cohorts. Models healthy brain volume trajectories across the lifespan to quantify the biological-versus-chronological age gap as a predictive health biomarker.
+            </p>
+            <div class="research-plain-language">
+              <span class="research-detail-heading">IN PLAIN LANGUAGE</span>
+              <p>Teach a computer what a healthy brain looks like at each age from MRI scans. Then show it someone new: if their brain looks older than their birthday says, that gap may be a clue to health.</p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="research-subsection">
+      <!-- CHAPTER 02: TECHNICAL STACK & SYSTEMS -->
+      <section class="research-subsection" id="engineering">
+        <span id="machine-learning" style="display:block;position:relative;top:-30px;visibility:hidden;"></span>
         <div class="subsection-heading">
-          <span>04 / CONFERENCES & WORKSHOPS</span>
+          <span>02 / TECHNICAL DOMAINS & STACK</span>
+        </div>
+        <div class="research-stack-grid">
+          <div class="stack-card">
+            <span class="stack-num">01 / SIMULATION</span>
+            <b>Neuro & Physics</b>
+            <p>Biophysical neural modeling and embodied mechanical control.</p>
+            <div class="pill-row">
+              <span class="tech-pill">Brian2</span>
+              <span class="tech-pill">MuJoCo</span>
+              <span class="tech-pill">flygym</span>
+              <span class="tech-pill">snnTorch</span>
+              <span class="tech-pill">MNE-Python</span>
+              <span class="tech-pill">FreeSurfer</span>
+            </div>
+          </div>
+          <div class="stack-card">
+            <span class="stack-num">02 / LEARNING</span>
+            <b>Machine Learning</b>
+            <p>Multimodal neural networks, time-series, and reinforcement learning.</p>
+            <div class="pill-row">
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">TensorFlow</span>
+              <span class="tech-pill">Scikit-Learn</span>
+              <span class="tech-pill">PPO</span>
+              <span class="tech-pill">Spiking NN</span>
+              <span class="tech-pill">CNNs</span>
+            </div>
+          </div>
+          <div class="stack-card">
+            <span class="stack-num">03 / CODE</span>
+            <b>Languages</b>
+            <p>Core algorithmic, low-level and systems development.</p>
+            <div class="pill-row">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">C++</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Java</span>
+            </div>
+          </div>
+          <div class="stack-card">
+            <span class="stack-num">04 / ARCHITECTURE</span>
+            <b>Systems & Tools</b>
+            <p>3D visual modeling, containerization, microservices and APIs.</p>
+            <div class="pill-row">
+              <span class="tech-pill">Blender 3D</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">Streamlit</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Git</span>
+              <span class="tech-pill">Arduino</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection-heading" style="margin-top: 48px;">
+          <span>03 / SELECTED ML & SOFTWARE REPOSITORIES</span>
+        </div>
+        <div class="engineering-projects-grid">
+          <a class="engineering-project-card" href="https://github.com/visionbyangelic/Multimodal-Emotion-Recognition" target="_blank" rel="noreferrer">
+            <div>
+              <span class="badge-chip active">● MULTIMODAL ML</span>
+              <h3>Emotiwave — Multimodal Emotion Recognition</h3>
+              <p>Research-focused multimodal emotion recognition using audio and visual data, with interpretable fusion and missing-modality robustness.</p>
+              <div class="pill-row">
+                <span class="tech-pill">PyTorch</span>
+                <span class="tech-pill">Audio-Visual</span>
+                <span class="tech-pill">Attention Fusion</span>
+              </div>
+            </div>
+            <span class="card-cta">VIEW REPOSITORY ON GITHUB ↗</span>
+          </a>
+
+          <a class="engineering-project-card" href="https://github.com/visionbyangelic/Neuro-Fatigue-Prediction" target="_blank" rel="noreferrer">
+            <div>
+              <span class="badge-chip">DEEP LEARNING · EEG</span>
+              <h3>Neuro-Fatigue Predictor</h3>
+              <p>EEG time-series preprocessing with MNE-Python coupled with a 1D-CNN pipeline for real-time cognitive fatigue classification.</p>
+              <div class="pill-row">
+                <span class="tech-pill">MNE-Python</span>
+                <span class="tech-pill">1D-CNN</span>
+                <span class="tech-pill">Time-Series</span>
+              </div>
+            </div>
+            <span class="card-cta">VIEW REPOSITORY ON GITHUB ↗</span>
+          </a>
+
+          <a class="engineering-project-card" href="https://github.com/visionbyangelic/nigerian-job-market-analyser" target="_blank" rel="noreferrer">
+            <div>
+              <span class="badge-chip">GENERATIVE AI · AGENTS</span>
+              <h3>Nigerian Tech Job Market Analyser</h3>
+              <p>A multi-agent GenAI system that analyzes tech job postings, surfaces in-demand skills and salary trends, and produces automated career strategy reports.</p>
+              <div class="pill-row">
+                <span class="tech-pill">Multi-Agent</span>
+                <span class="tech-pill">LLM Ops</span>
+                <span class="tech-pill">FastAPI</span>
+              </div>
+            </div>
+            <span class="card-cta">VIEW REPOSITORY ON GITHUB ↗</span>
+          </a>
+
+          <a class="engineering-project-card" href="https://github.com/visionbyangelic/ASL_to_text" target="_blank" rel="noreferrer">
+            <div>
+              <span class="badge-chip">COMPUTER VISION</span>
+              <h3>Mochi — ASL to Text</h3>
+              <p>A real-time American Sign Language to text chat application using MediaPipe hand landmarks and CNN classification for accessible communication.</p>
+              <div class="pill-row">
+                <span class="tech-pill">MediaPipe</span>
+                <span class="tech-pill">OpenCV</span>
+                <span class="tech-pill">CNN</span>
+              </div>
+            </div>
+            <span class="card-cta">VIEW REPOSITORY ON GITHUB ↗</span>
+          </a>
+
+          <a class="engineering-project-card" href="https://github.com/visionbyangelic/Oral-Sight-V1" target="_blank" rel="noreferrer">
+            <div>
+              <span class="badge-chip">HEALTHCARE AI</span>
+              <h3>OralSight — AI Lesion Screening</h3>
+              <p>An AI oral-lesion screening prototype using MobileNetV2 with Grad-CAM interpretability maps to visualize diagnostic decision regions.</p>
+              <div class="pill-row">
+                <span class="tech-pill">MobileNetV2</span>
+                <span class="tech-pill">Grad-CAM</span>
+                <span class="tech-pill">Interpretability</span>
+              </div>
+            </div>
+            <span class="card-cta">VIEW REPOSITORY ON GITHUB ↗</span>
+          </a>
+
+          <a class="engineering-project-card" href="https://github.com/visionbyangelic/computer-vision-projects" target="_blank" rel="noreferrer">
+            <div>
+              <span class="badge-chip">EXPERIMENTAL CV</span>
+              <h3>Real-Time Vision Lab</h3>
+              <p>A collection of real-time computer vision experiments: 3D hand tracking, gesture interfaces, object tracking, and augmented visual overlays.</p>
+              <div class="pill-row">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">OpenCV</span>
+                <span class="tech-pill">Algorithms</span>
+              </div>
+            </div>
+            <span class="card-cta">VIEW REPOSITORY ON GITHUB ↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- CHAPTER 03: CONFERENCES & TALKS -->
+      <section class="research-subsection" id="conferences">
+        <div class="subsection-heading">
+          <span>04 / CONFERENCES & PRESENTATIONS</span>
         </div>
         <div class="conference-grid">
           <div class="conference-card">
@@ -227,26 +343,22 @@
           </div>
         </div>
       </section>
-
     </main>
+
     <footer class="site-footer section-wrap">
       <a class="wordmark" href="index.html">
         ANGELIC
-        <span>
-          .
-        </span>
+        <span>.</span>
       </a>
       <span>
         BUILT WITH CURIOSITY · ©
-        <span id="year">
-        </span>
+        <span id="year"></span>
       </span>
       <a href="index.html">
         HOME ↑
       </a>
     </footer>
-    <script src="pages.js">
-    </script>
+    <script src="pages.js"></script>
     <script src="motion.js"></script>
   </body>
 </html>

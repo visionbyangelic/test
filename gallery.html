@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="#100f14">
-    <meta name="description" content="Selected training, appointments and research milestones — Angelic Charles.">
-    <title>Gallery — Angelic Charles</title>
+    <meta name="theme-color" content="#08090b">
+    <meta name="description" content="Visual Archive — 3D Blender Cycles renders, anatomical creature sculpting, and academic milestones by Angelic Charles.">
+    <title>Visual Archive — Angelic Charles</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="pages.css?v=20261116-gallery-strip">
+    <link rel="stylesheet" href="pages.css?v=20261118-archive">
     <link rel="stylesheet" href="motion.css">
   </head>
   <body>
@@ -18,13 +18,10 @@
     <header class="site-header">
       <a class="wordmark" href="index.html">ANGELIC<span>.</span></a>
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="research.html">Research</a>
-        <a href="engineering.html">Engineering</a>
+        <a href="research.html">Research & Systems</a>
         <a href="writing.html">Writing</a>
-        <a href="interests.html">Other interests</a>
-        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="gallery.html" class="active" aria-current="page">Visual Archive</a>
         <a href="about.html">About</a>
-        <a href="now.html">Now</a>
       </nav>
       <div class="header-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Switch theme"><span class="theme-icon">☼</span></button>
@@ -32,100 +29,221 @@
       </div>
     </header>
     <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-      <a href="research.html">Research</a>
-      <a href="engineering.html">Engineering</a>
+      <a href="research.html">Research & Systems</a>
       <a href="writing.html">Writing</a>
-      <a href="interests.html">Other interests</a>
-      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="gallery.html" class="active" aria-current="page">Visual Archive</a>
       <a href="about.html">About</a>
-      <a href="now.html">Now</a>
     </nav>
 
     <main class="inner-page section-wrap gallery-page">
       <a class="back-link" href="index.html">← HOME</a>
       <header class="page-intro">
-        <div class="section-kicker">06 / RECORDS & MILESTONES</div>
-        <h1>Gallery<span class="gallery-title-dot">.</span></h1>
-        <p>A visual record of courses, training, appointments, and research milestones. A few documents; many steps in a longer direction.</p>
+        <div class="section-kicker">03 / VISUAL ARCHIVE & RECORDS</div>
+        <h1>Visual Archive<span style="color:var(--accent);">.</span></h1>
+        <p>A curated dual archive uniting anatomical creature sculpting and cinematic lighting in Blender Cycles with academic appointments and research milestones.</p>
         <div class="pill-row" style="margin-top:20px;">
-          <span class="badge-chip active">● Document Archive</span>
-          <span class="badge-chip metric">12 Certificates & Appointments</span>
-          <span class="badge-chip">Research Milestones</span>
+          <a href="#blender-3d" class="badge-chip active">● Chapter 01: 3D Art & Worldbuilding (12 Renders)</a>
+          <a href="#academic-records" class="badge-chip">● Chapter 02: Records & Milestones (12 Documents)</a>
+          <span class="badge-chip metric">Interactive Lightbox Inspection</span>
         </div>
       </header>
 
-      <section class="gallery-lead" aria-label="Gallery introduction">
-        <div class="gallery-lead-mark">A / 01</div>
-        <div>
-          <span>THE ARCHIVE</span>
-          <p>Learning, recognition and research in progress.</p>
+      <!-- CHAPTER 01: 3D ART & WORLDBUILDING -->
+      <section class="archive-chapter-section" id="blender-3d" style="margin-top:24px;">
+        <div class="gallery-lead" aria-label="Chapter 01 Introduction">
+          <div class="gallery-lead-mark">01 / 3D</div>
+          <div>
+            <span>CHAPTER 01 · BLENDER CYCLES</span>
+            <p>High-poly creature sculpting, biological muscle topologies, volumetric lighting tests, and atmospheric environments. Tap any render to expand in high resolution.</p>
+          </div>
+          <div class="gallery-lead-accent" aria-hidden="true"></div>
         </div>
-        <div class="gallery-lead-accent" aria-hidden="true"></div>
+
+        <div class="editorial-gallery" style="margin-top:32px;">
+          <!-- 1A: Creature Anatomy -->
+          <div class="gallery-chapter">
+            <div class="gallery-chapter-heading">
+              <span class="badge-chip" style="margin-bottom:8px;">STUDY 01</span>
+              <h2>Organic Sculpting & Creature Anatomy</h2>
+              <p style="font-size:13px;color:var(--muted);margin:4px 0 20px;">Digital clay sculpting, biological muscle topologies, skin tension folds, and morphological comparison studies.</p>
+            </div>
+            <div class="gallery-creature-grid">
+              <button type="button" class="gallery-render-btn creature-main" data-full="assets/blender/creature-sculpt-comparison.jpeg" aria-label="Expand creature sculpt comparison study">
+                <img src="assets/blender/creature-sculpt-comparison.jpeg" alt="Creature sculpt comparison study" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Sculpt Comparison Study</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/creature-sculpt-detail.jpeg" aria-label="Expand creature sculpt skin detail">
+                <img src="assets/blender/creature-sculpt-detail.jpeg" alt="Creature sculpt skin detail" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Skin Detail & Folds</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/creature-sculpt-process.jpeg" aria-label="Expand creature sculpt work in progress">
+                <img src="assets/blender/creature-sculpt-process.jpeg" alt="Creature sculpt work in progress" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Work In Progress</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/creature-study-01.jpeg" aria-label="Expand creature head study">
+                <img src="assets/blender/creature-study-01.jpeg" alt="Creature head study" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Cranial Morphology</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/creature-study-02.jpeg" aria-label="Expand creature sculpt close-up profile">
+                <img src="assets/blender/creature-study-02.jpeg" alt="Creature sculpt close-up profile" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Profile Study</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/sculpting-process.jpeg" aria-label="Expand mesh topology and sculpting process">
+                <img src="assets/blender/sculpting-process.jpeg" alt="Mesh topology and sculpting process" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Mesh Topology</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- 1B: Environments & Worldbuilding -->
+          <div class="gallery-chapter" style="margin-top:24px;">
+            <div class="gallery-chapter-heading">
+              <span class="badge-chip" style="margin-bottom:8px;">STUDY 02</span>
+              <h2>Environments, Lighting & Worldbuilding</h2>
+              <p style="font-size:13px;color:var(--muted);margin:4px 0 20px;">Atmospheric shaders, volumetric scattering, snow and foliage materials, and cinematic night lighting studies.</p>
+            </div>
+            <div class="gallery-environment-grid">
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/fantasy-tree-environment.jpeg" aria-label="Expand fantasy tree environment">
+                <img src="assets/blender/fantasy-tree-environment.jpeg" alt="Fantasy tree environment" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Bioluminescent Tree</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/winter-village.jpeg" aria-label="Expand atmospheric winter village environment">
+                <img src="assets/blender/winter-village.jpeg" alt="Atmospheric winter village environment" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Winter Village</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/waterside-environment.jpeg" aria-label="Expand waterside environment render">
+                <img src="assets/blender/waterside-environment.jpeg" alt="Waterside environment render" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Waterside Shading</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/character-bust.jpeg" aria-label="Expand character bust sculpt">
+                <img src="assets/blender/character-bust.jpeg" alt="Character bust sculpt" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Character Bust</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/light-test.jpeg" aria-label="Expand volumetric light bounce test">
+                <img src="assets/blender/light-test.jpeg" alt="Volumetric light bounce test" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Volumetric Light Test</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+              <button type="button" class="gallery-render-btn" data-full="assets/blender/night-motion-study.jpeg" aria-label="Expand night scene vehicle lighting study">
+                <img src="assets/blender/night-motion-study.jpeg" alt="Night scene vehicle lighting study" loading="lazy">
+                <div class="gallery-render-overlay">
+                  <span class="gallery-render-title">Night Motion Study</span>
+                  <span class="gallery-render-badge">VIEW ↗</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <div class="credential-grid" aria-label="Certificates and academic records">
-        <button class="credential-card credential-card-tall" type="button" data-full="assets/certification/928df870-1936-470b-9916-ba845479d165.jpeg" aria-label="Open gallery image 1">
-          <span class="credential-index">01</span><img src="assets/certification/928df870-1936-470b-9916-ba845479d165.jpeg" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card credential-card-wide" type="button" data-full="assets/certification/IMG_0877.jpeg" aria-label="Open gallery image 2">
-          <span class="credential-index">02</span><img src="assets/certification/IMG_0877.jpeg" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card" type="button" data-full="assets/certification/IMG_0915.jpeg" aria-label="Open gallery image 3">
-          <span class="credential-index">03</span><img src="assets/certification/IMG_0915.jpeg" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card credential-card-tall" type="button" data-full="assets/certification/IMG_0962.png" aria-label="Open gallery image 4">
-          <span class="credential-index">04</span><img src="assets/certification/IMG_0962.png" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card" type="button" data-full="assets/certification/IMG_2424.jpeg" aria-label="Open gallery image 5">
-          <span class="credential-index">05</span><img src="assets/certification/IMG_2424.jpeg" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card credential-card-wide" type="button" data-full="assets/certification/IMG_2848.png" aria-label="Open gallery image 6">
-          <span class="credential-index">06</span><img src="assets/certification/IMG_2848.png" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card" type="button" data-full="assets/certification/IMG_3992.jpeg" aria-label="Open gallery image 7">
-          <span class="credential-index">07</span><img src="assets/certification/IMG_3992.jpeg" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card credential-card-tall" type="button" data-full="assets/certification/IMG_3993.jpeg" aria-label="Open gallery image 8">
-          <span class="credential-index">08</span><img src="assets/certification/IMG_3993.jpeg" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card" type="button" data-full="assets/certification/IMG_3995.jpeg" aria-label="Open gallery image 9">
-          <span class="credential-index">09</span><img src="assets/certification/IMG_3995.jpeg" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card credential-card-wide" type="button" data-full="assets/certification/IMG_3996.jpeg" aria-label="Open gallery image 10">
-          <span class="credential-index">10</span><img src="assets/certification/IMG_3996.jpeg" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card" type="button" data-full="assets/certification/IMG_3997.jpeg" aria-label="Open gallery image 11">
-          <span class="credential-index">11</span><img src="assets/certification/IMG_3997.jpeg" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-        <button class="credential-card credential-card-tall" type="button" data-full="assets/certification/IMG_3998.jpeg" aria-label="Open gallery image 12">
-          <span class="credential-index">12</span><img src="assets/certification/IMG_3998.jpeg" alt="Course certificate or academic record">
-          <span class="credential-open">VIEW DOCUMENT ↗</span>
-        </button>
-      </div>
+      <!-- CHAPTER 02: RECORDS & ACADEMIC MILESTONES -->
+      <section class="archive-chapter-section" id="academic-records" style="margin-top:64px;">
+        <div class="gallery-lead" aria-label="Chapter 02 Introduction">
+          <div class="gallery-lead-mark">02 / DOC</div>
+          <div>
+            <span>CHAPTER 02 · RECORDS & MILESTONES</span>
+            <p>Official appointments, fellowship certificates, research honors, and training milestones. Select any document to inspect full-size.</p>
+          </div>
+          <div class="gallery-lead-accent" aria-hidden="true"></div>
+        </div>
 
-      <section class="gallery-footnote">
-        <span>CONTINUOUSLY IN PROGRESS</span>
-        <p>This archive will grow alongside the work. Select any document to inspect it at full size.</p>
+        <div class="credential-grid" aria-label="Certificates and academic records" style="margin-top:24px;">
+          <button class="credential-card credential-card-tall" type="button" data-full="assets/certification/928df870-1936-470b-9916-ba845479d165.jpeg" aria-label="Open document 01">
+            <span class="credential-index">01</span><img src="assets/certification/928df870-1936-470b-9916-ba845479d165.jpeg" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card credential-card-wide" type="button" data-full="assets/certification/IMG_0877.jpeg" aria-label="Open document 02">
+            <span class="credential-index">02</span><img src="assets/certification/IMG_0877.jpeg" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card" type="button" data-full="assets/certification/IMG_0915.jpeg" aria-label="Open document 03">
+            <span class="credential-index">03</span><img src="assets/certification/IMG_0915.jpeg" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card credential-card-tall" type="button" data-full="assets/certification/IMG_0962.png" aria-label="Open document 04">
+            <span class="credential-index">04</span><img src="assets/certification/IMG_0962.png" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card" type="button" data-full="assets/certification/IMG_2424.jpeg" aria-label="Open document 05">
+            <span class="credential-index">05</span><img src="assets/certification/IMG_2424.jpeg" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card credential-card-wide" type="button" data-full="assets/certification/IMG_2848.png" aria-label="Open document 06">
+            <span class="credential-index">06</span><img src="assets/certification/IMG_2848.png" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card" type="button" data-full="assets/certification/IMG_3992.jpeg" aria-label="Open document 07">
+            <span class="credential-index">07</span><img src="assets/certification/IMG_3992.jpeg" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card credential-card-tall" type="button" data-full="assets/certification/IMG_3993.jpeg" aria-label="Open document 08">
+            <span class="credential-index">08</span><img src="assets/certification/IMG_3993.jpeg" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card" type="button" data-full="assets/certification/IMG_3995.jpeg" aria-label="Open document 09">
+            <span class="credential-index">09</span><img src="assets/certification/IMG_3995.jpeg" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card credential-card-wide" type="button" data-full="assets/certification/IMG_3996.jpeg" aria-label="Open document 10">
+            <span class="credential-index">10</span><img src="assets/certification/IMG_3996.jpeg" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card" type="button" data-full="assets/certification/IMG_3997.jpeg" aria-label="Open document 11">
+            <span class="credential-index">11</span><img src="assets/certification/IMG_3997.jpeg" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+          <button class="credential-card credential-card-tall" type="button" data-full="assets/certification/IMG_3998.jpeg" aria-label="Open document 12">
+            <span class="credential-index">12</span><img src="assets/certification/IMG_3998.jpeg" alt="Course certificate or academic record" loading="lazy">
+            <span class="credential-open">VIEW DOCUMENT ↗</span>
+          </button>
+        </div>
+
+        <section class="gallery-footnote" style="margin-top:20px;">
+          <span>CONTINUOUSLY EXPANDING</span>
+          <p>This archive grows alongside research progress, ongoing fellowships, and artistic explorations. Select any visual or document to inspect full-size.</p>
+        </section>
       </section>
     </main>
 
-    <dialog class="credential-lightbox" id="credentialLightbox" aria-label="Document viewer">
+    <!-- FULLSCREEN LIGHTBOX DIALOG -->
+    <dialog class="credential-lightbox" id="credentialLightbox" aria-label="Visual Archive viewer">
       <div class="lightbox-toolbar">
-        <span>DOCUMENT VIEWER <i> / </i> <b id="lightboxCount">01</b></span>
-        <button type="button" id="lightboxClose" aria-label="Close document viewer">CLOSE <span>×</span></button>
+        <span>ARCHIVE VIEWER <i> / </i> <b id="lightboxCount">01</b></span>
+        <button type="button" id="lightboxClose" aria-label="Close viewer">CLOSE <span>×</span></button>
       </div>
-      <div class="lightbox-stage"><img id="lightboxImage" src="" alt="Expanded gallery document"></div>
+      <div class="lightbox-stage"><img id="lightboxImage" src="" alt="Expanded visual archive asset"></div>
       <div class="lightbox-hint">ESC TO CLOSE <span>·</span> CLICK OUTSIDE TO RETURN</div>
     </dialog>
 

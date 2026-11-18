@@ -4,184 +4,202 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#08090b">
-    <title>
-      About — Angelic Charles
-    </title>
+    <meta name="description" content="About Angelic Charles — computational neuroscience researcher, software engineer, founder of Research As Stories.">
+    <title>About — Angelic Charles</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="pages.css?v=20261118-about">
     <link rel="stylesheet" href="motion.css">
   </head>
   <body>
-    <div class="grain">
-    </div>
+    <div class="grain" aria-hidden="true"></div>
     <header class="site-header">
-      <a class="wordmark" href="index.html">
-        ANGELIC
-        <span>
-          .
-        </span>
-      </a>
-      <nav class="desktop-nav">
-        <a href="research.html">
-          Research
-        </a>
-        <a href="engineering.html">
-          Engineering
-        </a>
-        <a href="writing.html">
-          Writing
-        </a>
-        <a href="interests.html">
-          Other interests
-        </a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">
-          About
-        </a>
-        <a href="now.html">
-          Now
-        </a>
+      <a class="wordmark" href="index.html">ANGELIC<span>.</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="research.html">Research & Systems</a>
+        <a href="writing.html">Writing</a>
+        <a href="gallery.html">Visual Archive</a>
+        <a href="about.html" class="active" aria-current="page">About</a>
       </nav>
       <div class="header-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
-          <span class="theme-icon">
-            ☼
-          </span>
-        </button>
-        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
-          <span>
-          </span>
-          <span>
-          </span>
-        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme"><span class="theme-icon">☼</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
       </div>
     </header>
-    <nav class="mobile-nav" id="mobileNav">
-      <a href="research.html">
-        Research
-      </a>
-      <a href="engineering.html">
-        Engineering
-      </a>
-      <a href="writing.html">
-        Writing
-      </a>
-      <a href="interests.html">
-        Other interests
-      </a>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">
-        About
-      </a>
-      <a href="now.html">
-        Now
-      </a>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="research.html">Research & Systems</a>
+      <a href="writing.html">Writing</a>
+      <a href="gallery.html">Visual Archive</a>
+      <a href="about.html" class="active" aria-current="page">About</a>
     </nav>
+
     <main class="inner-page section-wrap">
-      <a class="back-link" href="index.html">
-        ← HOME
-      </a>
+      <a class="back-link" href="index.html">← HOME</a>
       <header class="page-intro">
-        <div class="section-kicker">
-          05 / BACKGROUND & ETHOS
-        </div>
-        <h1>
-          About<span style="color:var(--accent);">.</span>
-        </h1>
-        <p>
-          A little context behind the work, the questions I keep returning to, and the interdisciplinary path that brought me here.
-        </p>
+        <div class="section-kicker">04 / BACKGROUND, ETHOS & ACTIVE FOCUS</div>
+        <h1>About<span style="color:var(--accent);">.</span></h1>
+        <p>Context behind the work, the questions I keep returning to, active live research simulations, and the interdisciplinary path that brought me here.</p>
         <div class="pill-row" style="margin-top:20px;">
-          <span class="badge-chip active">● Computational Neuroscience</span>
-          <span class="badge-chip metric">Biochemistry & CS</span>
-          <span class="badge-chip">Embodied Intelligence</span>
-          <span class="badge-chip">Science Journalism</span>
+          <a href="#live-dashboard" class="badge-chip active">● Active Focus & Simulations</a>
+          <a href="#ethos" class="badge-chip">● Ethos & Philosophy</a>
+          <a href="#timeline" class="badge-chip">● Academic Foundation & Milestones</a>
+          <span class="badge-chip metric">Biochemistry · CS · Neuro</span>
         </div>
       </header>
 
-      <div class="about-layout">
-        <div class="about-statement">
-          <p class="large-quote">
-            "I want to understand how intelligence works — and build things that help us ask better questions."
-          </p>
-          <p>
-            My work sits at the convergence of biochemistry, computer science, and computational neuroscience. Having trained across wet-lab biological systems and software engineering, I examine biological questions through biophysical models and physical simulations.
-          </p>
-          <p>
-            I'm deeply interested in biologically constrained neural networks, connectome-based emulation (Drosophila connectomics), spatial representations in place-cell populations, and translating complex primary literature into rigorous, accessible narratives.
-          </p>
-          <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
-            <a class="home-btn" href="https://github.com/visionbyangelic" target="_blank" rel="noreferrer">GITHUB / @visionbyangelic ↗</a>
-            <a class="home-btn" href="https://researchasstories.substack.com/" target="_blank" rel="noreferrer">RESEARCH AS STORIES ↗</a>
+      <!-- LIVE DASHBOARD & CURRENT FOCUS (Absorbed from Now) -->
+      <section class="research-subsection" id="live-dashboard" style="margin-top:16px;">
+        <span id="now" style="display:block;position:relative;top:-30px;visibility:hidden;"></span>
+        <div class="subsection-heading">
+          <span>ACTIVE RESEARCH SIMULATIONS & EDITORIAL FOCUS</span>
+        </div>
+        <div class="now-dashboard-grid">
+          <div class="now-card">
+            <span class="now-tag">01 / RESEARCH SIMULATION</span>
+            <h3>Connectome-to-Behavior Emulation</h3>
+            <p>
+              Coupling the full Drosophila connectome (FlyWire, BANC) with Brian2 point-neuron biophysics and an embodied MuJoCo flygym body to study emergent locomotion, grooming, and feeding without hand-coded motor rules.
+            </p>
+            <div class="pill-row" style="margin-top:14px;">
+              <span class="tech-pill">FlyWire</span>
+              <span class="tech-pill">Brian2</span>
+              <span class="tech-pill">MuJoCo</span>
+              <span class="tech-pill">Embodied AI</span>
+            </div>
+          </div>
+
+          <div class="now-card">
+            <span class="now-tag">02 / EDITORIAL & WRITING</span>
+            <h3>Research As Stories</h3>
+            <p>
+              Directing a 7-person team of writers and designers, translating peer-reviewed primary literature into accessible narratives, and publishing new long-form essays on Substack and our digital publication.
+            </p>
+            <div class="pill-row" style="margin-top:14px;">
+              <span class="tech-pill">7 Writers & Designers</span>
+              <span class="tech-pill">Primary Literature</span>
+              <span class="tech-pill">Substack</span>
+            </div>
+          </div>
+
+          <div class="now-card">
+            <span class="now-tag">03 / COGNITIVE GEOMETRY</span>
+            <h3>Representation Geometry & Place Cells</h3>
+            <p>
+              Exploring how biological constraints like spiking energy budgets and recurrence force neural networks to construct place-cell-like geometry with superior out-of-distribution transfer stability.
+            </p>
+            <div class="pill-row" style="margin-top:14px;">
+              <span class="tech-pill">Spiking NN</span>
+              <span class="tech-pill">Geometry</span>
+              <span class="tech-pill">Zero-Shot Transfer</span>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="about-timeline">
-          <div class="timeline-item">
-            <span>CURRENT / ACTIVE RESEARCH</span>
-            <strong>Connectome-to-Behavior Emulation</strong>
-            <p>Coupling complete Drosophila connectomes (FlyWire, BANC) with Brian2 point-neuron dynamics and an embodied biomechanical body (MuJoCo, flygym).</p>
+      <!-- CONFERENCES & PRESENTATIONS -->
+      <section class="research-subsection" style="margin-top:36px;">
+        <div class="subsection-heading">
+          <span>UPCOMING PRESENTATIONS & CONFERENCES</span>
+        </div>
+        <div class="conference-grid">
+          <div class="conference-card">
+            <div>
+              <span class="badge-chip accepted">ACCEPTED · ORAL PRESENTATION</span>
+              <h3>Neuroscience Society of Nigeria (NSN) 2026</h3>
+              <p>Brain Aging Dynamics Modeling — structural MRI morphometrics across OpenBHB and OASIS-3 cohorts.</p>
+            </div>
+            <span style="font:9px 'DM Mono', monospace;color:var(--muted);letter-spacing:.08em;">CONFERENCE · 2026</span>
           </div>
 
-          <div class="timeline-item">
-            <span>ACADEMIC FOUNDATION</span>
-            <strong>B.Sc. Biochemistry · HND Software Engineering · B.Sc. Computer Science</strong>
-            <p>Three complementary degrees bridging biological wet-lab mechanisms with rigorous software engineering and computer science.</p>
-          </div>
-
-          <div class="timeline-item">
-            <span>RESEARCH APPOINTMENT</span>
-            <strong>African Neuro-Data Research Lab</strong>
-            <p>Computational neuroscience researcher working with structural MRI morphometrics, brain aging, and neurodegenerative biomarkers.</p>
-          </div>
-
-          <div class="timeline-item">
-            <span>EDITORIAL PUBLICATION</span>
-            <strong>Founder & Lead Editor · Research As Stories</strong>
-            <p>Leading a 7-person team of writers and designers translating peer-reviewed primary literature into compelling scientific journalism.</p>
-          </div>
-
-          <div class="timeline-item">
-            <span>RESEARCH NETWORK</span>
-            <strong>African Brain Data Network & SPARK Academy</strong>
-            <p>MRI/fMRI Fellow · AI in Medical Imaging Fellow in collaboration with McGill University and mailab.io.</p>
-          </div>
-
-          <div class="timeline-item">
-            <span>DATA SCIENCE ACADEMY</span>
-            <strong>DataraFlow · Class Valedictorian</strong>
-            <p>Ranked 1st of 365 learners · Mentored cohorts of 700+ students in Python, machine learning workflows, and technical writing.</p>
-          </div>
-
-          <div class="timeline-item">
-            <span>COMMUNITY LEADERSHIP</span>
-            <strong>Neuromatch & Women in Neuroscience Nigeria</strong>
-            <p>Outreach Ambassador & Computational Neuroscience Interactive Track alumna · Virtual Coordinator for national scientific programming.</p>
+          <div class="conference-card">
+            <div>
+              <span class="badge-chip accepted">ACCEPTED · PRESENTATION</span>
+              <h3>GUSTAC Computational Workshop</h3>
+              <p>EM-NAV: Representation Geometry & Transferability of Spatial Representations.</p>
+            </div>
+            <span style="font:9px 'DM Mono', monospace;color:var(--muted);letter-spacing:.08em;">WORKSHOP · COMPUTATIONAL</span>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- ETHOS & BACKGROUND -->
+      <section class="research-subsection" id="ethos" style="margin-top:54px;">
+        <div class="subsection-heading">
+          <span>ETHOS & PHILOSOPHY</span>
+        </div>
+        <div class="about-layout">
+          <div class="about-statement">
+            <p class="large-quote">
+              "I want to understand how intelligence works — and build things that help us ask better questions."
+            </p>
+            <p>
+              My work sits at the convergence of biochemistry, computer science, and computational neuroscience. Having trained across wet-lab biological systems and software engineering, I examine biological questions through biophysical models and physical simulations.
+            </p>
+            <p>
+              I'm deeply interested in biologically constrained neural networks, connectome-based emulation (Drosophila connectomics), spatial representations in place-cell populations, and translating complex primary literature into rigorous, accessible narratives.
+            </p>
+            <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+              <a class="home-btn" href="https://github.com/visionbyangelic" target="_blank" rel="noreferrer">GITHUB / @visionbyangelic ↗</a>
+              <a class="home-btn" href="https://researchasstories.substack.com/" target="_blank" rel="noreferrer">RESEARCH AS STORIES ↗</a>
+            </div>
+          </div>
+
+          <!-- ACADEMIC & RESEARCH TIMELINE -->
+          <div class="about-timeline" id="timeline">
+            <div class="timeline-item">
+              <span>CURRENT / ACTIVE RESEARCH</span>
+              <strong>Connectome-to-Behavior Emulation</strong>
+              <p>Coupling complete Drosophila connectomes (FlyWire, BANC) with Brian2 point-neuron dynamics and an embodied biomechanical body (MuJoCo, flygym).</p>
+            </div>
+
+            <div class="timeline-item">
+              <span>ACADEMIC FOUNDATION</span>
+              <strong>B.Sc. Biochemistry · HND Software Engineering · B.Sc. Computer Science</strong>
+              <p>Three complementary degrees bridging biological wet-lab mechanisms with rigorous software engineering and computer science.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span>RESEARCH APPOINTMENT</span>
+              <strong>African Neuro-Data Research Lab</strong>
+              <p>Computational neuroscience researcher working with structural MRI morphometrics, brain aging, and neurodegenerative biomarkers.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span>EDITORIAL PUBLICATION</span>
+              <strong>Founder & Lead Editor · Research As Stories</strong>
+              <p>Leading a 7-person team of writers and designers translating peer-reviewed primary literature into compelling scientific journalism.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span>RESEARCH NETWORK</span>
+              <strong>African Brain Data Network & SPARK Academy</strong>
+              <p>MRI/fMRI Fellow · AI in Medical Imaging Fellow in collaboration with McGill University and mailab.io.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span>DATA SCIENCE ACADEMY</span>
+              <strong>DataraFlow · Class Valedictorian</strong>
+              <p>Ranked 1st of 365 learners · Mentored cohorts of 700+ students in Python, machine learning workflows, and technical writing.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span>COMMUNITY LEADERSHIP</span>
+              <strong>Neuromatch & Women in Neuroscience Nigeria</strong>
+              <p>Outreach Ambassador & Computational Neuroscience Interactive Track alumna · Virtual Coordinator for national scientific programming.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer class="site-footer section-wrap">
-      <a class="wordmark" href="index.html">
-        ANGELIC
-        <span>
-          .
-        </span>
-      </a>
-      <span>
-        BUILT WITH CURIOSITY · ©
-        <span id="year">
-        </span>
-      </span>
-      <a href="index.html">
-        HOME ↑
-      </a>
+      <a class="wordmark" href="index.html">ANGELIC<span>.</span></a>
+      <span>BUILT WITH CURIOSITY · © <span id="year"></span></span>
+      <a href="index.html">HOME ↑</a>
     </footer>
-    <script src="pages.js">
-    </script>
+    <script src="pages.js"></script>
     <script src="motion.js"></script>
   </body>
 </html>

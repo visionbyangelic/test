@@ -53,51 +53,16 @@
     revealTargets.forEach((element) => element.classList.add("is-visible"));
   }
 
-  // Subtle cursor halo and a soft pointer light on the neural artwork.
+  // Soft pointer light on the neural artwork.
   if (desktopPointer && !reducedMotion) {
-    const halo = document.createElement("div");
-    halo.className = "cursor-halo";
-    halo.setAttribute("aria-hidden", "true");
-    document.body.appendChild(halo);
-    document.body.classList.add("has-custom-cursor");
-
-    let frame = 0;
-    let pointerX = 0;
-    let pointerY = 0;
-
-    window.addEventListener("pointermove", (event) => {
-      pointerX = event.clientX;
-      pointerY = event.clientY;
-      if (frame) return;
-
-      frame = requestAnimationFrame(() => {
-        halo.style.left = `${pointerX}px`;
-        halo.style.top = `${pointerY}px`;
-        halo.classList.add("is-active");
-
-        const artwork = document.querySelector(".hero-art");
-        if (artwork) {
-          const bounds = artwork.getBoundingClientRect();
-          artwork.style.setProperty("--pointer-x", `${pointerX - bounds.left}px`);
-          artwork.style.setProperty("--pointer-y", `${pointerY - bounds.top}px`);
-        }
-
-        frame = 0;
-      });
-    }, { passive: true });
-
-    document.querySelectorAll("a, button, [role='button']").forEach((element) => {
-      element.addEventListener("pointerenter", () => {
-        halo.classList.add("is-hovering");
-      });
-      element.addEventListener("pointerleave", () => {
-        halo.classList.remove("is-hovering");
-      });
-    });
-
-    document.addEventListener("pointerleave", () => {
-      halo.classList.remove("is-active");
-    });
+    const artwork = document.querySelector(".hero-art");
+    if (artwork) {
+      window.addEventListener("pointermove", (event) => {
+        const bounds = artwork.getBoundingClientRect();
+        artwork.style.setProperty("--pointer-x", `${event.clientX - bounds.left}px`);
+        artwork.style.setProperty("--pointer-y", `${event.clientY - bounds.top}px`);
+      }, { passive: true });
+    }
   }
 
   // Slight image movement on desktop; the gallery composition remains fixed.

@@ -84,31 +84,34 @@
       <section class="hero section-wrap" id="home">
         <div class="hero-copy">
           <div class="eyebrow">
-            <span class="status-dot">
-            </span>
-            COMPUTATIONAL NEUROSCIENCE · ENGINEERING · WRITING
+            <span class="status-dot"></span>
+            COMPUTATIONAL NEUROSCIENCE · EMBODIED BRAIN SIMULATION · WRITING
           </div>
           <h1>
-            Understanding intelligence.
+            Simulating biological intelligence.
             <br>
             <em>
               Building with curiosity.
             </em>
           </h1>
           <p class="hero-intro">
-            I'm Angelic Charles — a computational neuroscience researcher and software engineer interested in how intelligence emerges in brains and machines, and how complex ideas can be made clear.
+            I'm Angelic Charles — a computational neuroscience researcher and software engineer investigating how cognitive behavior emerges from real synaptic wiring (FlyWire, BANC) inside embodied physical simulations (MuJoCo, Brian2).
           </p>
+          <div class="home-research-hero-badge">
+            <span></span>
+            ONGOING: CONNECTOME-TO-BEHAVIOR EMULATION
+          </div>
         </div>
-        <div class="hero-art signature-art" aria-label="Interactive abstract sculptural form">
+        <div class="hero-art signature-art" aria-label="Interactive 3D Drosophila Connectome Simulation">
           <div class="art-label art-label-top">
-            FORM STUDY <span>NO. 01</span>
+            CONNECTOME EMULATION <span>FLYWIRE / BANC-v1</span>
           </div>
           <canvas id="sculptureCanvas" aria-hidden="true"></canvas>
           <div class="sculpture-index" aria-hidden="true">
-            <span>FIG.</span>
+            <span>SIM.</span>
             <strong>01</strong>
             <i></i>
-            <span>EMERGENCE</span>
+            <span>3D SYNAPTIC DYNAMICS</span>
           </div>
           <div class="sculpture-links" aria-label="Explore the portfolio">
             <a href="research.html" data-sculpture-link="Research"><span>01</span> Research <i>↗</i></a>
@@ -118,13 +121,313 @@
             <a href="gallery.html" data-sculpture-link="Gallery"><span>05</span> Gallery <i>↗</i></a>
           </div>
           <div class="art-caption">
-            <span>AN EXERCISE IN CONNECTION</span>
-            <span>MOVE TO EXPLORE</span>
+            <span>CLICK TO FIRE ACTION POTENTIAL</span>
+            <span>MOVE TO ROTATE 3D NETWORK</span>
           </div>
         </div>
       </section>
-      <section class="home-explore section-wrap">
-        
+
+      <!-- 01 / RESEARCH SPOTLIGHT (BEST WORK) -->
+      <section class="selected section-wrap" id="research-spotlight">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">01 / PRIMARY WORK</div>
+            <h2>Research & Connectome Systems</h2>
+          </div>
+          <p>
+            Coupling full biological connectomes with biophysical point-neuron models and physics engines to evaluate emergent intelligence.
+          </p>
+        </div>
+
+        <div class="selected-grid">
+          <article class="feature-card">
+            <div class="feature-top">
+              <span>01 / ACTIVE RESEARCH · ONGOING</span>
+              <a href="https://github.com/visionbyangelic/ConnectomeToBehaviour" target="_blank" rel="noreferrer">GITHUB ↗</a>
+            </div>
+            <figure class="feature-visual" style="background:#0c0b11;">
+              <img src="assets/IMG_3152.jpeg" alt="Drosophila Connectome-to-Behavior visual" style="width:100%;height:100%;object-fit:cover;">
+            </figure>
+            <div class="feature-bottom">
+              <div>
+                <h2>Connectome-to-Behavior: Closed-Loop Drosophila Emulation</h2>
+                <p>
+                  Closed-loop simulation coupling complete Drosophila connectomes (FlyWire, BANC) with Brian2 point-neuron dynamics and an embodied biomechanical body (MuJoCo, flygym) to evaluate emergent locomotion, grooming, and feeding without hand-coded motor rules.
+                </p>
+                <div class="home-plain-box">
+                  <strong>IN PLAIN LANGUAGE</strong>
+                  Take the full wiring diagram of a fruit fly's brain, switch it on inside a computer, give it a virtual body, and see whether it walks, cleans itself and feeds organically.
+                </div>
+              </div>
+              <a class="circle-arrow" href="https://github.com/visionbyangelic/ConnectomeToBehaviour" target="_blank" rel="noreferrer" aria-label="View Connectome to Behavior project on GitHub">↗</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-top">
+              <span>02 / COMPLETED RESEARCH · VIDEO DEMO</span>
+              <a href="https://youtu.be/uxkBqr7Y4zE" target="_blank" rel="noreferrer">DEMO VIDEO ↗</a>
+            </div>
+            <figure class="feature-visual" style="background:#0c0b11;">
+              <img src="https://img.youtube.com/vi/uxkBqr7Y4zE/hqdefault.jpg" alt="EM-NAV project demonstration" style="width:100%;height:100%;object-fit:cover;">
+            </figure>
+            <div class="feature-bottom">
+              <div>
+                <h2>EM-NAV: Geometry of Spatial Representations</h2>
+                <p>
+                  Examining how biological constraints (spiking thresholds, metabolic sparsity penalties) shape internal spatial representations, place-cell-like geometry, and zero-shot transfer stability in embodied agents.
+                </p>
+                <div class="home-plain-box">
+                  <strong>KEY FINDING</strong>
+                  Constrained spiking networks produced place-cell-like coding with up to ~80× higher spatial information per spike than unconstrained baselines.
+                </div>
+              </div>
+              <a class="circle-arrow" href="https://youtu.be/uxkBqr7Y4zE" target="_blank" rel="noreferrer" aria-label="Watch EM-NAV demo on YouTube">↗</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-list" style="margin-top: 24px;">
+          <a class="project-row" href="https://github.com/visionbyangelic/Brain-Aging" target="_blank" rel="noreferrer">
+            <span class="project-index">03</span>
+            <div>
+              <h3>Brain Aging Dynamics Modeling</h3>
+              <p>Structural MRI morphometrics across OpenBHB and OASIS-3 cohorts. Accepted for Oral Presentation at NSN 2026.</p>
+            </div>
+            <span class="project-status">ORAL PRESENTATION · NSN 2026</span>
+            <span class="row-arrow">↗</span>
+          </a>
+        </div>
+
+        <div style="margin-top: 28px;">
+          <a class="home-btn" href="research.html">EXPLORE ALL RESEARCH PROJECTS & SYSTEMS <span>↗</span></a>
+        </div>
+      </section>
+
+      <!-- 02 / ENGINEERING & ML -->
+      <section class="engineering-section">
+        <div class="section-wrap content-section">
+          <div class="section-heading">
+            <div>
+              <div class="section-kicker">02 / BUILDING</div>
+              <h2>Engineering & Machine Learning</h2>
+            </div>
+            <p>
+              Full-stack tools, embodied physics simulations, spiking neural networks, and multimodal machine learning.
+            </p>
+          </div>
+
+          <div class="engineering-grid">
+            <div class="skill-panel">
+              <span class="panel-number">01</span>
+              <h3>Neuro & Simulation</h3>
+              <p>Biophysical modeling and embodied physical control.</p>
+              <div class="tag-list">
+                <span>Brian2</span>
+                <span>MuJoCo</span>
+                <span>flygym</span>
+                <span>snnTorch</span>
+                <span>MNE-Python</span>
+              </div>
+            </div>
+            <div class="skill-panel">
+              <span class="panel-number">02</span>
+              <h3>Machine Learning</h3>
+              <p>Neural representations, multimodal architectures, and RL.</p>
+              <div class="tag-list">
+                <span>PyTorch</span>
+                <span>TensorFlow</span>
+                <span>Scikit-Learn</span>
+                <span>PPO</span>
+                <span>Spiking NN</span>
+              </div>
+            </div>
+            <div class="skill-panel">
+              <span class="panel-number">03</span>
+              <h3>Languages</h3>
+              <p>Core algorithmic and systems programming.</p>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>TypeScript</span>
+                <span>C++</span>
+                <span>SQL</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+            <div class="skill-panel">
+              <span class="panel-number">04</span>
+              <h3>Systems & 3D</h3>
+              <p>3D visual modeling, pipelines and deployment.</p>
+              <div class="tag-list">
+                <span>Blender 3D</span>
+                <span>FastAPI</span>
+                <span>Docker</span>
+                <span>Git</span>
+                <span>Streamlit</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-list" style="margin-top: 32px;">
+            <a class="project-row" href="https://github.com/visionbyangelic/Multimodal-Emotion-Recognition" target="_blank" rel="noreferrer">
+              <span class="project-index">01</span>
+              <div>
+                <h3>Emotiwave — Multimodal Emotion Recognition</h3>
+                <p>Research-focused multimodal emotion recognition using audio and visual data with interpretable fusion and missing-modality robustness.</p>
+              </div>
+              <span class="project-status">PYTHON · PYTORCH</span>
+              <span class="row-arrow">↗</span>
+            </a>
+            <a class="project-row" href="https://github.com/visionbyangelic/Neuro-Fatigue-Prediction" target="_blank" rel="noreferrer">
+              <span class="project-index">02</span>
+              <div>
+                <h3>Neuro-Fatigue Prediction</h3>
+                <p>Time-series cognitive load and neural fatigue estimation using multimodal signals.</p>
+              </div>
+              <span class="project-status">MACHINE LEARNING</span>
+              <span class="row-arrow">↗</span>
+            </a>
+          </div>
+
+          <div style="margin-top: 28px;">
+            <a class="home-btn" href="engineering.html">VIEW ENGINEERING & CODE PROJECTS <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 / 3D BLENDER VISUAL ARCHIVE -->
+      <section class="content-section section-wrap">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">03 / VISUAL ARCHIVE</div>
+            <h2>Blender 3D & Sculptural Work</h2>
+          </div>
+          <p>
+            Anatomical creature sculpting, environmental lighting studies, and visual worldbuilding.
+          </p>
+        </div>
+
+        <div class="home-blender-grid">
+          <a class="home-blender-item" href="blender-3d.html">
+            <div class="home-blender-img">
+              <img src="assets/blender/creature-sculpt-comparison.jpeg" alt="Creature sculpt study" loading="lazy">
+            </div>
+            <div class="home-blender-info">
+              <span>01 / SCULPT STUDY</span>
+              <h4>Creature Anatomy Study</h4>
+            </div>
+          </a>
+
+          <a class="home-blender-item" href="blender-3d.html">
+            <div class="home-blender-img">
+              <img src="assets/blender/night-motion-study.jpeg" alt="Night scene lighting study" loading="lazy">
+            </div>
+            <div class="home-blender-info">
+              <span>02 / LIGHTING</span>
+              <h4>Night Motion Study</h4>
+            </div>
+          </a>
+
+          <a class="home-blender-item" href="blender-3d.html">
+            <div class="home-blender-img">
+              <img src="assets/blender/winter-village.jpeg" alt="Winter village environment" loading="lazy">
+            </div>
+            <div class="home-blender-info">
+              <span>03 / ENVIRONMENT</span>
+              <h4>Winter Village Study</h4>
+            </div>
+          </a>
+
+          <a class="home-blender-item" href="blender-3d.html">
+            <div class="home-blender-img">
+              <img src="assets/blender/character-bust.jpeg" alt="Character bust sculpt" loading="lazy">
+            </div>
+            <div class="home-blender-info">
+              <span>04 / CHARACTER</span>
+              <h4>Character Bust</h4>
+            </div>
+          </a>
+        </div>
+
+        <div style="margin-top: 28px;">
+          <a class="home-btn" href="blender-3d.html">OPEN 3D VISUAL ARCHIVE (12 RENDERS) <span>↗</span></a>
+        </div>
+      </section>
+
+      <!-- 04 / SCIENCE COMMUNICATION & WRITING -->
+      <section class="content-section section-wrap">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">04 / SCIENCE COMMUNICATION</div>
+            <h2>Writing & Editorial Work</h2>
+          </div>
+          <p>
+            Research As Stories — making primary scientific literature clear, engaging, and memorable.
+          </p>
+        </div>
+
+        <div class="writing-grid">
+          <article class="writing-card">
+            <div class="writing-type">01 / ESSAY · BRAIN & SELF</div>
+            <div class="writing-mark">01<span class="mark-dot">.</span></div>
+            <h3>The Coordinates of the Soul</h3>
+            <p>Why do people feel themselves leaving their bodies? Six epilepsy patients, one brain region and a dial set by posture. A narrative built around Blanke et al. (Brain, 2004).</p>
+            <a class="card-link" href="https://researchasstories.substack.com/" target="_blank" rel="noreferrer">READ ESSAY ↗</a>
+          </article>
+
+          <article class="writing-card">
+            <div class="writing-type">02 / CASE STUDY · VISION</div>
+            <div class="writing-mark">02<span class="mark-dot">.</span></div>
+            <h3>The Name That Turned the Lights On</h3>
+            <p>A woman blind for fifteen years could see again when a different personality took over. Follows the clinical case and brain recordings reported by Strasburger & Waldvogel (2015).</p>
+            <a class="card-link" href="https://researchasstories.substack.com/p/the-name-that-turned-the-lights-on" target="_blank" rel="noreferrer">READ ESSAY ↗</a>
+          </article>
+
+          <article class="writing-card">
+            <div class="writing-type">03 / COSMOLOGY · EXPLAINER</div>
+            <div class="writing-mark">03<span class="mark-dot">.</span></div>
+            <h3>Why the Night Sky Isn't Blindingly Bright</h3>
+            <p>If the universe is infinite, why isn't the night sky as bright as the Sun? A critical examination of Olbers' paradox and the astrophysical evidence behind cosmic darkness.</p>
+            <a class="card-link" href="https://researchasstories.substack.com/" target="_blank" rel="noreferrer">READ ESSAY ↗</a>
+          </article>
+        </div>
+
+        <div style="margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap;">
+          <a class="home-btn" href="writing.html">EXPLORE WRITING ARCHIVE <span>↗</span></a>
+          <a class="home-btn" href="https://researchasstories.substack.com/" target="_blank" rel="noreferrer" style="border-color: var(--accent);">VISIT SUBSTACK PUBLICATION <span>↗</span></a>
+        </div>
+      </section>
+
+      <!-- 05 / ABOUT SUMMARY & CONTACT -->
+      <section class="content-section section-wrap">
+        <div class="about-layout">
+          <div class="about-statement">
+            <div class="section-kicker">05 / ABOUT & ETHOS</div>
+            <p class="large-quote">
+              Interested in how intelligence emerges in brains and machines, and how complex ideas can be made clear.
+            </p>
+            <p>
+              Working at the intersection of computational neuroscience, embodied physical simulation, and science communication. Always open to scientific collaboration and discussions on biological neural dynamics.
+            </p>
+            <div style="margin-top: 24px; display: flex; gap: 14px; flex-wrap: wrap;">
+              <a class="home-btn" href="about.html">READ FULL ABOUT & BACKGROUND <span>↗</span></a>
+              <a class="home-btn" href="https://github.com/visionbyangelic" target="_blank" rel="noreferrer">GITHUB / @visionbyangelic <span>↗</span></a>
+            </div>
+          </div>
+          <div class="about-facts">
+            <div class="fact">
+              <span>FOCUS</span>
+              <strong>Connectome Emulation · Drosophila · Brian2 · MuJoCo</strong>
+            </div>
+            <div class="fact">
+              <span>EDITORIAL</span>
+              <strong>Founder & Lead Editor · Research As Stories</strong>
+            </div>
+            <div class="fact">
+              <span>CONFERENCE</span>
+              <strong>Oral Presentation · Neuroscience Society of Nigeria (NSN) 2026</strong>
+            </div>
+          </div>
         </div>
       </section>
     </main>

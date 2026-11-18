@@ -86,31 +86,43 @@
       </a>
       <header class="page-intro">
         <div class="section-kicker">
-          01 / INVESTIGATION
+          01 / RESEARCH & CONNECTOMES
         </div>
         <h1>
-          Research
+          Research<span style="color:var(--accent);">.</span>
         </h1>
         <p>
-          Research projects, systems and presentations.
+          Computational neuroscience, biological connectome emulation, embodied physical simulations, and neural representation geometry.
         </p>
+        <div class="pill-row" style="margin-top:20px;">
+          <span class="badge-chip active">● Ongoing Simulation</span>
+          <span class="badge-chip metric">FlyWire & BANC Connectomes</span>
+          <span class="badge-chip accepted">Oral Presentation · NSN 2026</span>
+          <span class="badge-chip">MuJoCo Physics</span>
+        </div>
       </header>
       <div class="research-feature-list">
         <article class="research-feature">
           <div class="feature-top">
-            <span>
-              01 / ACTIVE RESEARCH
-            </span>
-            <a href="https://github.com/visionbyangelic/ConnectomeToBehaviour" target="_blank" rel="noreferrer">
-              GITHUB ↗
+            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+              <span class="badge-chip active">● 01 / ACTIVE RESEARCH</span>
+              <span class="badge-chip metric">EMBODIED CONNECTOME</span>
+            </div>
+            <a class="home-btn" style="padding:6px 14px;font-size:10px;" href="https://github.com/visionbyangelic/ConnectomeToBehaviour" target="_blank" rel="noreferrer">
+              GITHUB REPO ↗
             </a>
           </div>
           <h2>
             Connectome-to-Behavior: Closed-Loop Drosophila Emulation
           </h2>
-          <p class="feature-status">
-            Ongoing · GitHub Repo
-          </p>
+          <div class="pill-row">
+            <span class="tech-pill">FlyWire Connectome</span>
+            <span class="tech-pill">BANC Dataset</span>
+            <span class="tech-pill">Brian2 Biophysics</span>
+            <span class="tech-pill">MuJoCo Physics</span>
+            <span class="tech-pill">flygym Body</span>
+            <span class="tech-pill">Closed-Loop Simulation</span>
+          </div>
           <figure class="research-project-image">
             <img src="assets/IMG_3152.jpeg" alt="Connectome-to-Behavior research project visual" loading="lazy">
           </figure>
@@ -118,99 +130,101 @@
             Closed-loop simulation coupling complete Drosophila connectomes (FlyWire, BANC) with Brian2 point-neuron dynamics and an embodied biomechanical body (MuJoCo, flygym) to evaluate emergent locomotion, grooming, and feeding without hand-coded motor rules.
           </p>
           <div class="research-detail">
-            <span>RESEARCH QUESTION</span>
+            <span class="research-detail-heading">RESEARCH QUESTION</span>
             <p>Can natural coordinated behaviors emerge organically when real synaptic wiring is given simple biophysical rules and placed in an embodied physical simulation?</p>
           </div>
           <div class="research-detail research-plain-language">
-            <span>IN PLAIN LANGUAGE</span>
-            <p>Take the full wiring diagram of a fruit fly’s brain, switch it on inside a computer, give it a virtual body, and see whether it walks, cleans itself and feeds, without anyone programming those moves. No findings yet.</p>
+            <span class="research-detail-heading">IN PLAIN LANGUAGE</span>
+            <p>Take the full wiring diagram of a fruit fly's brain, switch it on inside a computer, give it a virtual body, and see whether it walks, cleans itself and feeds, without anyone programming those moves.</p>
           </div>
         </article>
         <article class="research-feature">
           <div class="feature-top">
-            <span>
-              02 / COMPLETED RESEARCH
-            </span>
-            <a href="https://github.com/visionbyangelic/em-nav-representation-geometry" target="_blank" rel="noreferrer">
-              GITHUB ↗
+            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+              <span class="badge-chip">02 / COMPLETED RESEARCH</span>
+              <span class="badge-chip metric">~80× SPATIAL INFO / SPIKE</span>
+            </div>
+            <a class="home-btn" style="padding:6px 14px;font-size:10px;" href="https://github.com/visionbyangelic/em-nav-representation-geometry" target="_blank" rel="noreferrer">
+              GITHUB REPO ↗
             </a>
           </div>
           <h2>
             EM-NAV: Geometry & Transferability of Spatial Representations
           </h2>
-          <p class="feature-status">
-            Completed · GitHub Repo
-          </p>
+          <div class="pill-row">
+            <span class="tech-pill">Spiking Neural Networks</span>
+            <span class="tech-pill">Place Cells</span>
+            <span class="tech-pill">Metabolic Sparsity</span>
+            <span class="tech-pill">Zero-Shot Transfer</span>
+            <span class="tech-pill">Representation Geometry</span>
+          </div>
           <a class="research-video-thumbnail" href="https://youtu.be/uxkBqr7Y4zE" target="_blank" rel="noreferrer" aria-label="Watch the EM-NAV project demonstration on YouTube">
             <img src="https://img.youtube.com/vi/uxkBqr7Y4zE/hqdefault.jpg" alt="EM-NAV project demonstration video thumbnail" loading="lazy">
-            <span>PLAY PROJECT DEMONSTRATION ↗</span>
+            <span>WATCH DEMONSTRATION VIDEO ↗</span>
           </a>
           <p>
             Computational study examining how biological constraints (spiking thresholds, metabolic sparsity penalties, and recurrence) shape internal spatial representations, place-cell-like geometry, and zero-shot transfer stability in embodied agents under severe sensory ambiguity.
           </p>
           <div class="research-detail">
-            <span>KEY FINDING</span>
+            <span class="research-detail-heading">KEY FINDING</span>
             <p>Constrained spiking networks produced place-cell-like coding with up to ~80× higher spatial information per spike than unconstrained baselines, with stronger transfer into continuous 3D environments.</p>
           </div>
           <div class="research-detail research-plain-language">
-            <span>IN PLAIN LANGUAGE</span>
-            <p>Give a virtual explorer a brain that must save energy and only fire when it counts, like a real one. Its inner “map” starts to look like the place cells in real brains, and it copes better when dropped somewhere new.</p>
+            <span class="research-detail-heading">IN PLAIN LANGUAGE</span>
+            <p>Give a virtual explorer a brain that must save energy and only fire when it counts, like a real one. Its inner "map" starts to look like the place cells in real brains, and it copes better when dropped somewhere new.</p>
           </div>
-       </article>
+        </article>
       </div>
       <section class="research-subsection">
         <div class="subsection-heading">
-          <span>
-            03 / OTHER RESEARCH & SYSTEMS
-          </span>
+          <span>03 / OTHER RESEARCH & SYSTEMS</span>
         </div>
-        <div class="research-row">
-          <div>
-            <h3>
-              Brain Aging Dynamics Modeling
-            </h3>
-            <p>
-              Structural MRI morphometrics across OpenBHB and OASIS-3 cohorts. Accepted for Oral Presentation at NSN 2026.
-            </p>
-            <p class="plain-language-inline">IN PLAIN LANGUAGE: Teach a computer what a healthy brain looks like at each age from MRI scans. Then show it someone new: if their brain looks older than their birthday says, that gap may be a clue to health.</p>
+        <div class="research-feature" style="margin-top:20px;">
+          <div class="feature-top">
+            <span class="badge-chip accepted">ORAL PRESENTATION · NSN 2026</span>
+            <a class="home-btn" style="padding:6px 14px;font-size:10px;" href="https://github.com/visionbyangelic/Brain-Aging" target="_blank" rel="noreferrer">
+              GITHUB REPO ↗
+            </a>
           </div>
-          <a href="https://github.com/visionbyangelic/Brain-Aging" target="_blank">
-            GITHUB ↗
-          </a>
+          <h2>Brain Aging Dynamics Modeling</h2>
+          <div class="pill-row">
+            <span class="tech-pill">Structural MRI</span>
+            <span class="tech-pill">Morphometrics</span>
+            <span class="tech-pill">OpenBHB Cohort</span>
+            <span class="tech-pill">OASIS-3 Dataset</span>
+            <span class="tech-pill">Biomarker Modeling</span>
+          </div>
+          <p>
+            Structural MRI morphometrics across OpenBHB and OASIS-3 cohorts. Models healthy brain volume trajectories across the lifespan to quantify the biological-versus-chronological age gap as a predictive health biomarker.
+          </p>
+          <div class="research-plain-language">
+            <span class="research-detail-heading">IN PLAIN LANGUAGE</span>
+            <p>Teach a computer what a healthy brain looks like at each age from MRI scans. Then show it someone new: if their brain looks older than their birthday says, that gap may be a clue to health.</p>
+          </div>
         </div>
-        
       </section>
+
       <section class="research-subsection">
         <div class="subsection-heading">
-          <span>
-            04 / CONFERENCES & WORKSHOPS
-          </span>
+          <span>04 / CONFERENCES & WORKSHOPS</span>
         </div>
-        <div class="research-row">
-          <div>
-            <h3>
-              Neuroscience Society of Nigeria (NSN) 2026
-            </h3>
-            <p>
-              Brain Aging Dynamics Modeling — accepted for oral presentation.
-            </p>
+        <div class="conference-grid">
+          <div class="conference-card">
+            <div>
+              <span class="badge-chip accepted">ACCEPTED · ORAL PRESENTATION</span>
+              <h3>Neuroscience Society of Nigeria (NSN) 2026</h3>
+              <p>Brain Aging Dynamics Modeling — accepted for oral presentation on structural MRI morphometrics and age-gap biomarkers.</p>
+            </div>
+            <span style="font:9px 'DM Mono';color:var(--muted);letter-spacing:.08em;">CONFERENCE · 2026</span>
           </div>
-          <span class="acceptance">
-            ACCEPTED · ORAL PRESENTATION
-          </span>
-        </div>
-        <div class="research-row">
-          <div>
-            <h3>
-              GUSTAC Computational Workshop
-            </h3>
-            <p>
-              EM-NAV — accepted for presentation.
-            </p>
+          <div class="conference-card">
+            <div>
+              <span class="badge-chip accepted">ACCEPTED · PRESENTATION</span>
+              <h3>GUSTAC Computational Workshop</h3>
+              <p>EM-NAV: Representation Geometry & Transferability of Spatial Representations under Biological Sparsity Constraints.</p>
+            </div>
+            <span style="font:9px 'DM Mono';color:var(--muted);letter-spacing:.08em;">WORKSHOP · COMPUTATIONAL</span>
           </div>
-          <span class="acceptance">
-            ACCEPTED · PRESENTATION
-          </span>
         </div>
       </section>
 

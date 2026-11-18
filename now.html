@@ -86,100 +86,89 @@
       </a>
       <header class="page-intro">
         <div class="section-kicker">
-          07 / RIGHT NOW
+          07 / LIVE DASHBOARD
         </div>
         <h1>
-          Now
+          Now<span style="color:var(--accent);">.</span>
         </h1>
         <p>
-          What I'm working on, writing about and looking forward to.
+          A live snapshot of active simulations, what I'm currently reading, and upcoming research presentations.
         </p>
+        <div class="pill-row" style="margin-top:20px;">
+          <span class="badge-chip active">● Real-Time Focus</span>
+          <span class="badge-chip metric">Updated November 2026</span>
+          <span class="badge-chip">Closed-Loop Emulation</span>
+        </div>
       </header>
-      <div class="now-layout">
-        <div class="now-main">
-          <div class="now-date">
-            CURRENTLY WORKING ON
+
+      <section class="research-subsection" style="margin-top:0;">
+        <div class="subsection-heading">
+          <span>CURRENT FOCUS AREAS</span>
+        </div>
+        <div class="now-dashboard-grid">
+          <div class="now-card">
+            <span class="now-tag">01 / RESEARCH SIMULATION</span>
+            <h3>Connectome-to-Behavior Emulation</h3>
+            <p>
+              Coupling the full Drosophila connectome (FlyWire, BANC) with Brian2 point-neuron biophysics and an embodied MuJoCo flygym body to study emergent locomotion and feeding without hand-coded motor rules.
+            </p>
+            <div class="pill-row" style="margin-top:14px;">
+              <span class="tech-pill">FlyWire</span>
+              <span class="tech-pill">Brian2</span>
+              <span class="tech-pill">MuJoCo</span>
+            </div>
           </div>
-          <h3>
-            Connectome-to-Behaviour research
-          </h3>
-          <p class="now-lead">
-            Building a closed-loop whole-brain emulation of
-            <i>
-              Drosophila melanogaster
-            </i>
-            , connecting a biological wiring diagram, neural dynamics and an embodied virtual fly.
-          </p>
-          <div class="now-items">
-            <div>
-              <span class="now-bullet">
-              </span>
-              <p>
-                <strong>
-                  Research
-                </strong>
-                — developing the ConnectomeToBehaviour project.
-              </p>
+
+          <div class="now-card">
+            <span class="now-tag">02 / EDITORIAL & WRITING</span>
+            <h3>Research As Stories</h3>
+            <p>
+              Directing our 7-person team of writers and designers, translating peer-reviewed primary literature into accessible narratives, and publishing new long-form essays on Substack.
+            </p>
+            <div class="pill-row" style="margin-top:14px;">
+              <span class="tech-pill">7 Team Members</span>
+              <span class="tech-pill">Weekly Substack</span>
             </div>
-            <div>
-              <span class="now-bullet">
-              </span>
-              <p>
-                <strong>
-                  Writing
-                </strong>
-                — publishing thoughts, questions and notes on
-                <a href="https://open.substack.com/pub/visionbyangelic" target="_blank" rel="noreferrer">
-                  Substack ↗
-                </a>
-                .
-              </p>
-            </div>
-            <div>
-              <span class="now-bullet">
-              </span>
-              <p>
-                <strong>
-                  Exploring
-                </strong>
-                — computational neuroscience, machine learning and the relationship between brains and machines.
-              </p>
+          </div>
+
+          <div class="now-card">
+            <span class="now-tag">03 / EXPLORATION</span>
+            <h3>Representation Geometry & Place Cells</h3>
+            <p>
+              Exploring how biological constraints like spiking energy budgets and recurrence force neural networks to construct place-cell-like geometry with superior out-of-distribution transfer.
+            </p>
+            <div class="pill-row" style="margin-top:14px;">
+              <span class="tech-pill">Spiking NN</span>
+              <span class="tech-pill">Geometry</span>
             </div>
           </div>
         </div>
-        <aside class="calendar-panel">
-          <div class="calendar-head">
-            <span>
-              UPCOMING PRESENTATIONS
-            </span>
-            <span>
-              2026
-            </span>
+      </section>
+
+      <section class="research-subsection">
+        <div class="subsection-heading">
+          <span>UPCOMING PRESENTATIONS & CONFERENCES</span>
+        </div>
+        <div class="conference-grid">
+          <div class="conference-card">
+            <div>
+              <span class="badge-chip accepted">ACCEPTED · ORAL PRESENTATION</span>
+              <h3>Neuroscience Society of Nigeria (NSN) 2026</h3>
+              <p>Brain Aging Dynamics Modeling — structural MRI morphometrics across OpenBHB and OASIS-3 cohorts.</p>
+            </div>
+            <span style="font:9px 'DM Mono';color:var(--muted);letter-spacing:.08em;">CONFERENCE · 2026</span>
           </div>
-          <div class="calendar-entry">
-            <span>
-              NSN 2026
-            </span>
-            <h3>
-              Brain Aging Dynamics Modeling
-            </h3>
-            <p>
-              Accepted for oral presentation.
-            </p>
+
+          <div class="conference-card">
+            <div>
+              <span class="badge-chip accepted">ACCEPTED · PRESENTATION</span>
+              <h3>GUSTAC Computational Workshop</h3>
+              <p>EM-NAV: Representation Geometry & Transferability of Spatial Representations.</p>
+            </div>
+            <span style="font:9px 'DM Mono';color:var(--muted);letter-spacing:.08em;">WORKSHOP · COMPUTATIONAL</span>
           </div>
-          <div class="calendar-entry">
-            <span>
-              GUSTAC COMPUTATIONAL WORKSHOP
-            </span>
-            <h3>
-              EM-NAV
-            </h3>
-            <p>
-              Accepted for presentation.
-            </p>
-          </div>
-        </aside>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="site-footer section-wrap">
       <a class="wordmark" href="index.html">

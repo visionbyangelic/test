@@ -897,20 +897,62 @@ a
    letter-spacing: -.07em;
    margin: 23px 0 34px
 }
-.site-footer
-{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   border-top: 1px solid var(--line);
-   padding: 24px 0;
-   color: var(--faint);
-   font-size: 9px
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 32px 0 28px;
+  color: var(--faint);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
-.site-footer .wordmark
-{
-   color: var(--text);
-   font-size: 16px
+.site-footer .footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.site-footer .footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.site-footer .footer-socials a {
+  font: 10px "DM Mono", monospace;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.site-footer .footer-socials a:hover {
+  color: var(--accent);
+}
+.site-footer .footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  font: 9px "DM Mono", monospace;
+  color: var(--faint);
+  letter-spacing: 0.08em;
+  flex-wrap: wrap;
+}
+.site-footer .wordmark {
+  color: var(--text);
+  font-size: 16px;
+}
+.site-footer .footer-top-link {
+  font: 10px "DM Mono", monospace;
+  color: var(--faint);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  transition: color 0.2s;
+}
+.site-footer .footer-top-link:hover {
+  color: var(--text);
 }
 @media(max-width:900px)
 {
@@ -990,7 +1032,7 @@ a
   }
   .mobile-nav.open
   {
-     max-height: 380px;
+     max-height: 480px;
      padding: 15px 7vw 25px;
      border-color: var(--line)
   }
@@ -999,6 +1041,22 @@ a
      padding: 12px 0;
      font-size: 13px;
      border-bottom: 1px solid var(--line)
+  }
+  .mobile-nav-socials
+  {
+     display: flex;
+     gap: 16px;
+     padding: 16px 0 6px;
+     margin-top: 6px;
+     border-top: 1px dashed var(--line);
+  }
+  .mobile-nav-socials a
+  {
+     font: 10px "DM Mono", monospace !important;
+     color: var(--accent) !important;
+     letter-spacing: 0.08em;
+     padding: 0 !important;
+     border: none !important;
   }
   .section-wrap
   {

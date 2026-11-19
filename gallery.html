@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#08090b">
   <meta name="description"
-    content="Visual Archive — 3D Blender Cycles animation reels, anatomical creature sculpting, and academic milestones by Angelic Charles.">
+    content="Visual Archive — Blender animation, 3D sculpting, simulations, and visual experiments by Angelic Charles.">
   <title>Visual Archive — Angelic Charles</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="pages.css?v=20261119-archive-mobile2">
+  <link rel="stylesheet" href="pages.css?v=20261119-archive-player3">
   <link rel="stylesheet" href="motion.css">
 </head>
 
@@ -53,14 +53,19 @@
       <h1>Visual Archive<span style="color:var(--accent);">.</span></h1>
       <p>A curated archive of 3D motion, sculptural work, and cinematic environments.</p>
       <div class="pill-row" style="margin-top:20px;">
-        <a href="#blender-motion" class="badge-chip active">● 3D Motion & Animations (3 Reels)</a>
-        <a href="#blender-3d" class="badge-chip">● 3D Sculpting & Renders (7 Works)</a>
-        <span class="badge-chip metric">Interactive Fullscreen Lightbox & Player</span>
+        <span class="badge-chip active">● 1 CATEGORY</span>
+        <span class="badge-chip">BLENDER · 3D · MOTION · ENVIRONMENTS</span>
+        <span class="badge-chip metric">Expandable Creative Archive</span>
       </div>
     </header>
 
-    <!-- CHAPTER 01: 3D ART & WORLDBUILDING -->
-    <section class="archive-chapter-section" id="blender-3d" style="margin-top:24px;">
+    <!-- CATEGORY: BLENDER -->
+    <details class="archive-category" id="blender-category" open>
+      <summary class="archive-category-summary">
+        <span><small>CATEGORY 01</small><strong>Blender</strong><em>3D · Animation · Simulation · Environments</em></span>
+        <span class="archive-category-toggle">EXPLORE <b>＋</b></span>
+      </summary>
+      <section class="archive-chapter-section" id="blender-3d" style="margin-top:24px;">
       <div class="gallery-lead" aria-label="Chapter 01 Introduction">
         <div class="gallery-lead-mark">01 / 3D</div>
         <div>
@@ -100,8 +105,8 @@
             </div>
           </button>
 
-          <button type="button" class="gallery-video-card" data-video="assets/blender/seaaa.mkv" aria-label="Play Ocean & Fluid Surface Simulation video">
-            <video src="assets/blender/seaaa.mkv" poster="assets/blender/waterside-environment.jpeg" autoplay loop muted playsinline preload="metadata"></video>
+          <button type="button" class="gallery-video-card" data-video="assets/blender/ocean-simulation.mp4" aria-label="Play Ocean & Fluid Surface Simulation video">
+            <video src="assets/blender/ocean-simulation.mp4" poster="assets/blender/waterside-environment.jpeg" autoplay loop muted playsinline preload="metadata"></video>
             <div class="gallery-video-info">
               <div>
                 <strong>Ocean & Fluid Surface Simulation</strong>
@@ -196,19 +201,20 @@
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </details>
   </main>
 
   <!-- FULLSCREEN LIGHTBOX DIALOG -->
   <dialog class="credential-lightbox" id="credentialLightbox" aria-label="Visual Archive viewer">
     <div class="lightbox-toolbar">
       <span>ARCHIVE VIEWER <i> / </i> <b id="lightboxCount">01</b></span>
-      <button type="button" id="lightboxClose" aria-label="Close viewer">CLOSE <span>×</span></button>
+      <div class="lightbox-toolbar-actions"><button type="button" id="lightboxFullscreen" aria-label="Watch fullscreen">WATCH FULLSCREEN ↗</button><button type="button" id="lightboxClose" aria-label="Close viewer">CLOSE <span>×</span></button></div>
     </div>
     <div class="lightbox-stage">
       <img id="lightboxImage" src="" alt="Expanded visual archive asset">
     </div>
-    <div class="lightbox-hint">ESC TO CLOSE <span>·</span> CLICK OUTSIDE TO RETURN</div>
+    <div class="lightbox-hint" id="lightboxHint">PLAYBACK · FULLSCREEN AVAILABLE <span>·</span> ESC TO CLOSE</div>
   </dialog>
 
   <footer class="site-footer section-wrap">

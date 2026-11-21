@@ -29,6 +29,7 @@
         <a href="writing.html">Writing</a>
         <a href="gallery.html">Visual Archive</a>
         <a href="about.html">About</a>
+        <a href="#connectome" data-connectome-open>3D Connectome</a>
       </nav>
       <div class="header-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Switch theme">
@@ -49,6 +50,7 @@
       <a href="writing.html">Writing</a>
       <a href="gallery.html">Visual Archive</a>
       <a href="about.html">About</a>
+      <a href="#connectome" data-connectome-open>3D Connectome</a>
       <div class="mobile-nav-socials">
         <a href="https://github.com/visionbyangelic" target="_blank" rel="noreferrer">GITHUB ↗</a>
         <a href="https://www.linkedin.com/in/angeliccharles" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
@@ -56,7 +58,7 @@
       </div>
     </nav>
     <main>
-      <section class="hero section-wrap" id="home">
+      <section class="hero section-wrap hero-solo" id="home">
         <div class="hero-copy">
           <div class="eyebrow">
             <span class="status-dot"></span>
@@ -77,28 +79,6 @@
             ONGOING: CONNECTOME-TO-BEHAVIOR EMULATION
           </div>
 
-        </div>
-        <div class="hero-art signature-art" aria-label="Interactive 3D Drosophila Connectome Simulation">
-          <div class="art-label art-label-top">
-            CONNECTOME EMULATION <span>FLYWIRE / BANC-v1</span>
-          </div>
-          <canvas id="sculptureCanvas" aria-hidden="true"></canvas>
-          <div class="sculpture-index" aria-hidden="true">
-            <span>SIM.</span>
-            <strong>01</strong>
-            <i></i>
-            <span>3D SYNAPTIC DYNAMICS</span>
-          </div>
-          <div class="sculpture-links" aria-label="Explore the portfolio">
-            <a href="research.html" data-sculpture-link="Research & Systems"><span>01</span> Research & Systems <i>↗</i></a>
-            <a href="writing.html" data-sculpture-link="Writing"><span>02</span> Writing <i>↗</i></a>
-            <a href="gallery.html" data-sculpture-link="Visual Archive"><span>03</span> Visual Archive <i>↗</i></a>
-            <a href="about.html" data-sculpture-link="About"><span>04</span> About <i>↗</i></a>
-          </div>
-          <div class="art-caption">
-            <span>CLICK TO FIRE ACTION POTENTIAL</span>
-            <span>MOVE TO ROTATE 3D NETWORK</span>
-          </div>
         </div>
       </section>
 
@@ -262,6 +242,15 @@
               <span class="project-status">MACHINE LEARNING</span>
               <span class="row-arrow">↗</span>
             </a>
+            <a class="project-row" href="https://github.com/visionbyangelic/generalizable-fatigue-detection-fatigueset-drozy" target="_blank" rel="noreferrer">
+              <span class="project-index">03</span>
+              <div>
+                <h3>Generalizable Fatigue Detection</h3>
+                <p>EEG fatigue classifiers report near-perfect scores, then collapse on people they have never seen. This study tests that collapse head-on: leave-one-participant-out evaluation of deep and classical models across FatigueSet and DROZY, with participant-level results reported honestly, whichever way the numbers land.</p>
+              </div>
+              <span class="project-status">EEG · ML RESEARCH</span>
+              <span class="row-arrow">↗</span>
+            </a>
           </div>
 
           <div style="margin-top: 28px;">
@@ -328,7 +317,7 @@
             <div class="writing-mark">01<span class="mark-dot">.</span></div>
             <h3>The Coordinates of the Soul</h3>
             <p>Why do people feel themselves leaving their bodies? Six epilepsy patients, one brain region and a dial set by posture. A narrative built around Blanke et al. (Brain, 2004).</p>
-            <a class="card-link" href="https://researchasstories.substack.com/" target="_blank" rel="noreferrer">READ ESSAY ↗</a>
+            <a class="card-link" href="https://researchasstories.substack.com/p/the-coordinates-of-the-soul" target="_blank" rel="noreferrer">READ ESSAY ↗</a>
           </article>
 
           <article class="writing-card">
@@ -344,7 +333,7 @@
             <div class="writing-mark">03<span class="mark-dot">.</span></div>
             <h3>Why the Night Sky Isn't Blindingly Bright</h3>
             <p>If the universe is infinite, why isn't the night sky as bright as the Sun? A critical examination of Olbers' paradox and the astrophysical evidence behind cosmic darkness.</p>
-            <a class="card-link" href="https://researchasstories.substack.com/" target="_blank" rel="noreferrer">READ ESSAY ↗</a>
+            <a class="card-link" href="https://researchasstories.substack.com/p/why-the-night-sky-isnt-blindingly" target="_blank" rel="noreferrer">READ ESSAY ↗</a>
           </article>
         </div>
 
@@ -388,6 +377,34 @@
           </div>
         </div>
       </section>
+
+    <div class="connectome-overlay" id="connectomeOverlay" hidden>
+      <div class="connectome-sheet" role="dialog" aria-modal="true" aria-label="Interactive 3D connectome">
+        <button class="connectome-close" id="connectomeClose" aria-label="Close 3D connectome">CLOSE ✕</button>
+        <div class="hero-art signature-art" aria-label="Interactive 3D Drosophila Connectome Simulation">
+          <div class="art-label art-label-top">
+            CONNECTOME EMULATION <span>FLYWIRE / BANC-v1</span>
+          </div>
+          <canvas id="sculptureCanvas" aria-hidden="true"></canvas>
+          <div class="sculpture-index" aria-hidden="true">
+            <span>SIM.</span>
+            <strong>01</strong>
+            <i></i>
+            <span>3D SYNAPTIC DYNAMICS</span>
+          </div>
+          <div class="sculpture-links" aria-label="Explore the portfolio">
+            <a href="research.html" data-sculpture-link="Research & Systems"><span>01</span> Research & Systems <i>↗</i></a>
+            <a href="writing.html" data-sculpture-link="Writing"><span>02</span> Writing <i>↗</i></a>
+            <a href="gallery.html" data-sculpture-link="Visual Archive"><span>03</span> Visual Archive <i>↗</i></a>
+            <a href="about.html" data-sculpture-link="About"><span>04</span> About <i>↗</i></a>
+          </div>
+          <div class="art-caption">
+            <span>CLICK TO FIRE ACTION POTENTIAL</span>
+            <span>MOVE TO ROTATE 3D NETWORK</span>
+          </div>
+        </div>
+      </div>
+    </div>
     </main>
     <footer class="site-footer section-wrap">
       <div class="footer-top">
@@ -410,5 +427,23 @@
     <script src="script.js">
     </script>
     <script src="motion.js"></script>
+
+    <script>
+      (() => {
+        const overlay = document.getElementById("connectomeOverlay");
+        if (!overlay) return;
+        const open = (event) => {
+          if (event) event.preventDefault();
+          overlay.hidden = false;
+          document.body.style.overflow = "hidden";
+          requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
+        };
+        const close = () => { overlay.hidden = true; document.body.style.overflow = ""; };
+        document.querySelectorAll("[data-connectome-open]").forEach((el) => el.addEventListener("click", open));
+        document.getElementById("connectomeClose").addEventListener("click", close);
+        overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
+        document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !overlay.hidden) close(); });
+      })();
+    </script>
   </body>
 </html>

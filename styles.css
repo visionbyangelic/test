@@ -510,10 +510,7 @@ a
    background: var(--panel);
    width: 100%
 }
-.engineering-section .section-wrap
-{
-   padding-block: 0
-}
+/* engineering wrap keeps the standard section padding so headings clear the divider line */
 .engineering-grid
 {
    display: grid;
@@ -1502,4 +1499,70 @@ a
 @media (max-width: 600px) {
   .home-blender-grid { grid-template-columns: 1fr; }
   .engineering-grid { grid-template-columns: 1fr; }
+}
+
+
+/* 2026-11-21: hero without the 3D structure (opens from navigation instead),
+   compact skill panels on smaller screens */
+.hero.hero-solo
+{
+   grid-template-columns: 1fr;
+   min-height: 0;
+   padding: 92px 0 78px
+}
+.hero-solo .hero-copy
+{
+   max-width: 780px
+}
+.connectome-overlay
+{
+   position: fixed;
+   inset: 0;
+   z-index: 300;
+   background: rgba(7,7,11,.92);
+   backdrop-filter: blur(8px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 22px
+}
+.connectome-overlay[hidden]
+{
+   display: none
+}
+.connectome-sheet
+{
+   position: relative;
+   width: min(1080px,100%)
+}
+.connectome-sheet .hero-art
+{
+   height: min(76vh,660px)
+}
+.connectome-close
+{
+   position: absolute;
+   top: -46px;
+   right: 0;
+   background: transparent;
+   border: 1px solid var(--line);
+   color: var(--text);
+   font: 10px "DM Mono",monospace;
+   letter-spacing: .14em;
+   padding: 9px 14px;
+   cursor: pointer
+}
+@media(max-width:1024px)
+{
+   .skill-panel { min-height: 0 }
+   .skill-panel h3 { margin-top: 16px }
+   .skill-panel p { min-height: 0 }
+}
+@media(max-width:760px)
+{
+   .hero.hero-solo { padding: 64px 0 54px }
+   .skill-panel { padding: 18px 16px }
+   .skill-panel h3 { margin: 10px 0 6px }
+   .tag-list { margin-top: 12px }
+   .connectome-sheet .hero-art { height: 68vh }
 }

@@ -50,6 +50,7 @@
 
   const ctx = canvas.getContext("2d", { alpha: true });
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const smallScreen = window.matchMedia("(max-width: 760px)").matches;
   const finePointer = window.matchMedia("(pointer: fine)").matches;
 
   let width = 0;
@@ -273,7 +274,7 @@
     if (!visible) return;
     ctx.clearRect(0, 0, width, height);
 
-    const light = root.dataset.theme === "light";
+    const light = false; // the connectome stage stays dark in both themes
     const ax = pitch + pointerY * 0.45;
     const ay = rotation + pointerX * 0.75;
     const scale = Math.min(width, height) * (width < 520 ? 0.28 : 0.33);
@@ -512,7 +513,7 @@
 
   const observer = new IntersectionObserver((entries) => {
     visible = entries[0].isIntersecting;
-    if (visible && !reducedMotion && !frame) {
+    if (visible && !reducedMotion && !smallScreen && !frame) {
       lastTime = 0;
       frame = requestAnimationFrame(animate);
     } else if (!visible && frame) {
@@ -523,7 +524,10 @@
   observer.observe(canvas);
 
   resize();
-  if (reducedMotion) draw(0);
+  if (reducedMotion || smallScreen) {
+    if (smallScreen && !reducedMotion) rotation = 0.55;
+    draw(0);
+  }
   else frame = requestAnimationFrame(animate);
 
   window.addEventListener("resize", () => {
@@ -535,7 +539,7 @@
     if (document.hidden && frame) {
       cancelAnimationFrame(frame);
       frame = 0;
-    } else if (!document.hidden && visible && !reducedMotion && !frame) {
+    } else if (!document.hidden && visible && !reducedMotion && !smallScreen && !frame) {
       lastTime = 0;
       frame = requestAnimationFrame(animate);
     }

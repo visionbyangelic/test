@@ -1516,3 +1516,22 @@ a
    .skill-panel h3 { margin: 10px 0 6px }
    .tag-list { margin-top: 12px }
 }
+
+
+/* 2026-11-21: the connectome stage is a dark instrument in both themes;
+   on phones it becomes a still specimen frame */
+.hero-art
+{
+   background: radial-gradient(ellipse at 50% 50%,rgba(126,84,184,.30),transparent 62%),#0b0a10;
+   border-color: rgba(238,233,226,.16)
+}
+.hero-art .art-label,
+.hero-art .art-caption
+{
+   color: rgba(238,233,226,.58)
+}
+@media(max-width:760px)
+{
+   .hero-art { height: 300px }
+   .hero-art .art-caption { display: none }
+}

@@ -29,7 +29,6 @@
         <a href="writing.html">Writing</a>
         <a href="gallery.html">Visual Archive</a>
         <a href="about.html">About</a>
-        <a href="#connectome" data-connectome-open>3D Connectome</a>
       </nav>
       <div class="header-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Switch theme">
@@ -50,7 +49,6 @@
       <a href="writing.html">Writing</a>
       <a href="gallery.html">Visual Archive</a>
       <a href="about.html">About</a>
-      <a href="#connectome" data-connectome-open>3D Connectome</a>
       <div class="mobile-nav-socials">
         <a href="https://github.com/visionbyangelic" target="_blank" rel="noreferrer">GITHUB ↗</a>
         <a href="https://www.linkedin.com/in/angeliccharles" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
@@ -58,7 +56,7 @@
       </div>
     </nav>
     <main>
-      <section class="hero section-wrap hero-solo" id="home">
+      <section class="hero section-wrap" id="home">
         <div class="hero-copy">
           <div class="eyebrow">
             <span class="status-dot"></span>
@@ -79,6 +77,28 @@
             ONGOING: CONNECTOME-TO-BEHAVIOR EMULATION
           </div>
 
+        </div>
+        <div class="hero-art signature-art" aria-label="Interactive 3D Drosophila Connectome Simulation">
+          <div class="art-label art-label-top">
+            CONNECTOME EMULATION <span>FLYWIRE / BANC-v1</span>
+          </div>
+          <canvas id="sculptureCanvas" aria-hidden="true"></canvas>
+          <div class="sculpture-index" aria-hidden="true">
+            <span>SIM.</span>
+            <strong>01</strong>
+            <i></i>
+            <span>3D SYNAPTIC DYNAMICS</span>
+          </div>
+          <div class="sculpture-links" aria-label="Explore the portfolio">
+            <a href="research.html" data-sculpture-link="Research & Systems"><span>01</span> Research & Systems <i>↗</i></a>
+            <a href="writing.html" data-sculpture-link="Writing"><span>02</span> Writing <i>↗</i></a>
+            <a href="gallery.html" data-sculpture-link="Visual Archive"><span>03</span> Visual Archive <i>↗</i></a>
+            <a href="about.html" data-sculpture-link="About"><span>04</span> About <i>↗</i></a>
+          </div>
+          <div class="art-caption">
+            <span>CLICK TO FIRE ACTION POTENTIAL</span>
+            <span>MOVE TO ROTATE 3D NETWORK</span>
+          </div>
         </div>
       </section>
 
@@ -159,252 +179,6 @@
         </div>
       </section>
 
-      <!-- 02 / ENGINEERING & ML -->
-      <section class="engineering-section">
-        <div class="section-wrap content-section">
-          <div class="section-heading">
-            <div>
-              <div class="section-kicker">02 / BUILDING</div>
-              <h2>Engineering & Machine Learning</h2>
-            </div>
-            <p>
-              Full-stack tools, embodied physics simulations, spiking neural networks, and multimodal machine learning.
-            </p>
-          </div>
-
-          <div class="engineering-grid">
-            <div class="skill-panel">
-              <span class="panel-number">01</span>
-              <h3>Neuro & Simulation</h3>
-              <p>Biophysical modeling and embodied physical control.</p>
-              <div class="tag-list">
-                <span>Brian2</span>
-                <span>MuJoCo</span>
-                <span>flygym</span>
-                <span>snnTorch</span>
-                <span>MNE-Python</span>
-              </div>
-            </div>
-            <div class="skill-panel">
-              <span class="panel-number">02</span>
-              <h3>Machine Learning</h3>
-              <p>Neural representations, multimodal architectures, and RL.</p>
-              <div class="tag-list">
-                <span>PyTorch</span>
-                <span>TensorFlow</span>
-                <span>Scikit-Learn</span>
-                <span>PPO</span>
-                <span>Spiking NN</span>
-              </div>
-            </div>
-            <div class="skill-panel">
-              <span class="panel-number">03</span>
-              <h3>Languages</h3>
-              <p>Core algorithmic and systems programming.</p>
-              <div class="tag-list">
-                <span>Python</span>
-                <span>TypeScript</span>
-                <span>C++</span>
-                <span>SQL</span>
-                <span>JavaScript</span>
-              </div>
-            </div>
-            <div class="skill-panel">
-              <span class="panel-number">04</span>
-              <h3>Systems & 3D</h3>
-              <p>3D visual modeling, pipelines and deployment.</p>
-              <div class="tag-list">
-                <span>Blender 3D</span>
-                <span>FastAPI</span>
-                <span>Docker</span>
-                <span>Git</span>
-                <span>Streamlit</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-list" style="margin-top: 32px;">
-            <a class="project-row" href="https://github.com/visionbyangelic/Multimodal-Emotion-Recognition" target="_blank" rel="noreferrer">
-              <span class="project-index">01</span>
-              <div>
-                <h3>Emotiwave — Multimodal Emotion Recognition</h3>
-                <p>Research-focused multimodal emotion recognition using audio and visual data with interpretable fusion and missing-modality robustness.</p>
-              </div>
-              <span class="project-status">PYTHON · PYTORCH</span>
-              <span class="row-arrow">↗</span>
-            </a>
-            <a class="project-row" href="https://github.com/visionbyangelic/Neuro-Fatigue-Prediction" target="_blank" rel="noreferrer">
-              <span class="project-index">02</span>
-              <div>
-                <h3>Neuro-Fatigue Prediction</h3>
-                <p>Time-series cognitive load and neural fatigue estimation using multimodal signals.</p>
-              </div>
-              <span class="project-status">MACHINE LEARNING</span>
-              <span class="row-arrow">↗</span>
-            </a>
-            <a class="project-row" href="https://github.com/visionbyangelic/generalizable-fatigue-detection-fatigueset-drozy" target="_blank" rel="noreferrer">
-              <span class="project-index">03</span>
-              <div>
-                <h3>Generalizable Fatigue Detection</h3>
-                <p>EEG fatigue classifiers report near-perfect scores, then collapse on people they have never seen. This study tests that collapse head-on: leave-one-participant-out evaluation of deep and classical models across FatigueSet and DROZY, with participant-level results reported honestly, whichever way the numbers land.</p>
-              </div>
-              <span class="project-status">EEG · ML RESEARCH</span>
-              <span class="row-arrow">↗</span>
-            </a>
-          </div>
-
-          <div style="margin-top: 28px;">
-            <a class="home-btn" href="research.html#engineering">VIEW SYSTEMS & CODE PROJECTS <span>↗</span></a>
-          </div>
-        </div>
-      </section>
-
-      <!-- 03 / 3D BLENDER VISUAL ARCHIVE -->
-      <section class="content-section section-wrap">
-        <div class="section-heading">
-          <div>
-            <div class="section-kicker">03 / VISUAL ARCHIVE</div>
-            <h2>Blender 3D & Sculptural Work</h2>
-          </div>
-          <p>
-            Anatomical creature sculpting, environmental lighting studies, and visual worldbuilding.
-          </p>
-        </div>
-
-        <div class="home-blender-grid">
-
-          <a class="home-blender-item" href="gallery.html#blender-3d">
-            <div class="home-blender-img">
-              <img src="assets/blender/creature-sculpt-comparison.jpeg" alt="Creature sculpt study" loading="lazy">
-            </div>
-            <div class="home-blender-info">
-              <span>03 / ANATOMY STUDY</span>
-              <h4>Creature Muscle Morphology</h4>
-            </div>
-          </a>
-
-          <a class="home-blender-item" href="gallery.html#blender-3d">
-            <div class="home-blender-img">
-              <img src="assets/blender/night-motion-study.jpeg" alt="Night scene lighting study" loading="lazy">
-            </div>
-            <div class="home-blender-info">
-              <span>04 / LIGHTING STUDY</span>
-              <h4>Volumetric Night Motion</h4>
-            </div>
-          </a>
-        </div>
-
-        <div style="margin-top: 28px;">
-          <a class="home-btn" href="gallery.html#blender-3d">OPEN VISUAL ARCHIVE (ANIMATION REELS & 7 RENDERS) <span>↗</span></a>
-        </div>
-      </section>
-
-      <!-- 04 / SCIENCE COMMUNICATION & WRITING -->
-      <section class="content-section section-wrap">
-        <div class="section-heading">
-          <div>
-            <div class="section-kicker">04 / SCIENCE COMMUNICATION</div>
-            <h2>Writing & Editorial Work</h2>
-          </div>
-          <p>
-            Research As Stories — making primary scientific literature clear, engaging, and memorable.
-          </p>
-        </div>
-
-        <div class="writing-grid">
-          <article class="writing-card">
-            <div class="writing-type">01 / ESSAY · BRAIN & SELF</div>
-            <div class="writing-mark">01<span class="mark-dot">.</span></div>
-            <h3>The Coordinates of the Soul</h3>
-            <p>Why do people feel themselves leaving their bodies? Six epilepsy patients, one brain region and a dial set by posture. A narrative built around Blanke et al. (Brain, 2004).</p>
-            <a class="card-link" href="https://researchasstories.substack.com/p/the-coordinates-of-the-soul" target="_blank" rel="noreferrer">READ ESSAY ↗</a>
-          </article>
-
-          <article class="writing-card">
-            <div class="writing-type">02 / CASE STUDY · VISION</div>
-            <div class="writing-mark">02<span class="mark-dot">.</span></div>
-            <h3>The Name That Turned the Lights On</h3>
-            <p>A woman blind for fifteen years could see again when a different personality took over. Follows the clinical case and brain recordings reported by Strasburger & Waldvogel (2015).</p>
-            <a class="card-link" href="https://researchasstories.substack.com/p/the-name-that-turned-the-lights-on" target="_blank" rel="noreferrer">READ ESSAY ↗</a>
-          </article>
-
-          <article class="writing-card">
-            <div class="writing-type">03 / COSMOLOGY · EXPLAINER</div>
-            <div class="writing-mark">03<span class="mark-dot">.</span></div>
-            <h3>Why the Night Sky Isn't Blindingly Bright</h3>
-            <p>If the universe is infinite, why isn't the night sky as bright as the Sun? A critical examination of Olbers' paradox and the astrophysical evidence behind cosmic darkness.</p>
-            <a class="card-link" href="https://researchasstories.substack.com/p/why-the-night-sky-isnt-blindingly" target="_blank" rel="noreferrer">READ ESSAY ↗</a>
-          </article>
-        </div>
-
-        <div style="margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap;">
-          <a class="home-btn" href="writing.html">EXPLORE WRITING ARCHIVE <span>↗</span></a>
-          <a class="home-btn" href="https://researchasstories.substack.com/" target="_blank" rel="noreferrer" style="border-color: var(--accent);">VISIT SUBSTACK PUBLICATION <span>↗</span></a>
-        </div>
-      </section>
-
-      <!-- 05 / ABOUT SUMMARY & CONTACT -->
-      <section class="content-section section-wrap">
-        <div class="about-layout">
-          <div class="about-statement">
-            <div class="section-kicker">05 / ABOUT & ETHOS</div>
-            <p class="large-quote">
-              Interested in how intelligence emerges in brains and machines, and how complex ideas can be made clear.
-            </p>
-            <p>
-              Working at the intersection of computational neuroscience, embodied physical simulation, and science communication. Always open to scientific collaboration and discussions on biological neural dynamics.
-            </p>
-            <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
-              <a class="home-btn" href="about.html">READ FULL ABOUT & BACKGROUND <span>↗</span></a>
-              <a class="home-btn" href="https://github.com/visionbyangelic" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a>
-              <a class="home-btn" href="https://www.linkedin.com/in/angeliccharles" target="_blank" rel="noreferrer">LINKEDIN <span>↗</span></a>
-              <a class="home-btn" href="mailto:visionbyangelic@gmail.com">EMAIL <span>↗</span></a>
-            </div>
-          </div>
-          <div class="about-facts">
-            <div class="fact">
-              <span>FOCUS</span>
-              <strong>Connectome Emulation · Drosophila · Brian2 · MuJoCo</strong>
-            </div>
-            <div class="fact">
-              <span>EDITORIAL</span>
-              <strong>Founder & Lead Editor · Research As Stories</strong>
-            </div>
-            <div class="fact">
-              <span>CONFERENCE</span>
-              <strong>Oral Presentation · Neuroscience Society of Nigeria (NSN) 2026</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <div class="connectome-overlay" id="connectomeOverlay" hidden>
-      <div class="connectome-sheet" role="dialog" aria-modal="true" aria-label="Interactive 3D connectome">
-        <button class="connectome-close" id="connectomeClose" aria-label="Close 3D connectome">CLOSE ✕</button>
-        <div class="hero-art signature-art" aria-label="Interactive 3D Drosophila Connectome Simulation">
-          <div class="art-label art-label-top">
-            CONNECTOME EMULATION <span>FLYWIRE / BANC-v1</span>
-          </div>
-          <canvas id="sculptureCanvas" aria-hidden="true"></canvas>
-          <div class="sculpture-index" aria-hidden="true">
-            <span>SIM.</span>
-            <strong>01</strong>
-            <i></i>
-            <span>3D SYNAPTIC DYNAMICS</span>
-          </div>
-          <div class="sculpture-links" aria-label="Explore the portfolio">
-            <a href="research.html" data-sculpture-link="Research & Systems"><span>01</span> Research & Systems <i>↗</i></a>
-            <a href="writing.html" data-sculpture-link="Writing"><span>02</span> Writing <i>↗</i></a>
-            <a href="gallery.html" data-sculpture-link="Visual Archive"><span>03</span> Visual Archive <i>↗</i></a>
-            <a href="about.html" data-sculpture-link="About"><span>04</span> About <i>↗</i></a>
-          </div>
-          <div class="art-caption">
-            <span>CLICK TO FIRE ACTION POTENTIAL</span>
-            <span>MOVE TO ROTATE 3D NETWORK</span>
-          </div>
-        </div>
-      </div>
-    </div>
     </main>
     <footer class="site-footer section-wrap">
       <div class="footer-top">
@@ -428,22 +202,5 @@
     </script>
     <script src="motion.js"></script>
 
-    <script>
-      (() => {
-        const overlay = document.getElementById("connectomeOverlay");
-        if (!overlay) return;
-        const open = (event) => {
-          if (event) event.preventDefault();
-          overlay.hidden = false;
-          document.body.style.overflow = "hidden";
-          requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
-        };
-        const close = () => { overlay.hidden = true; document.body.style.overflow = ""; };
-        document.querySelectorAll("[data-connectome-open]").forEach((el) => el.addEventListener("click", open));
-        document.getElementById("connectomeClose").addEventListener("click", close);
-        overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
-        document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !overlay.hidden) close(); });
-      })();
-    </script>
   </body>
 </html>

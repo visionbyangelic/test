@@ -5,24 +5,32 @@
   const themeToggle = document.getElementById("themeToggle");
   const themeIcon = themeToggle.querySelector(".theme-icon");
 
+  const THEMES = ["dark", "pink", "light"];
+  const NEXT_THEME = { dark: "pink", pink: "light", light: "dark" };
+  const NEXT_ICON = { dark: "♥", pink: "☼", light: "☾" };
+  const THEME_COLOR = { dark: "#100f14", pink: "#fdeef4", light: "#f1eee9" };
+
   const savedTheme = localStorage.getItem("angelic-theme");
-  if (savedTheme === "light") root.dataset.theme = "light";
+  if (THEMES.includes(savedTheme)) root.dataset.theme = savedTheme;
+
+  const currentTheme = () =>
+    THEMES.includes(root.dataset.theme) ? root.dataset.theme : "dark";
 
   const updateThemeControl = () => {
-    const light = root.dataset.theme === "light";
-    themeIcon.textContent = light ? "☾" : "☼";
+    const current = currentTheme();
+    themeIcon.textContent = NEXT_ICON[current];
     themeToggle.setAttribute(
       "aria-label",
-      light ? "Switch to dark theme" : "Switch to light theme"
+      "Switch to " + NEXT_THEME[current] + " theme"
     );
     document.querySelector('meta[name="theme-color"]').content =
-      light ? "#f1eee9" : "#100f14";
+      THEME_COLOR[current];
   };
 
   updateThemeControl();
 
   themeToggle.addEventListener("click", () => {
-    root.dataset.theme = root.dataset.theme === "light" ? "dark" : "light";
+    root.dataset.theme = NEXT_THEME[currentTheme()];
     localStorage.setItem("angelic-theme", root.dataset.theme);
     updateThemeControl();
   });

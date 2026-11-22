@@ -26,6 +26,24 @@
    --header: rgba(241,238,233,.88);
    color-scheme: light
 }
+:root[data-theme="pink"]
+{
+   --bg: #fdeef4;
+   --panel: #fadbe9;
+   --panel2: #f5c6da;
+   --text: #40162a;
+   --muted: #7e435c;
+   --faint: #ad7f93;
+   --line: rgba(122,32,72,.16);
+   --accent: #c92a6d;
+   --glow: rgba(201,42,109,.13);
+   --header: rgba(253,238,244,.88);
+   color-scheme: light
+}
+:root[data-theme="pink"] .wordmark span
+{
+   color: #c92a6d
+}
 *
 {
    box-sizing: border-box
@@ -1534,4 +1552,15 @@ a
 {
    .hero-art { height: 300px }
    .hero-art .art-caption { display: none }
+}
+
+/* Connectome hero artwork hidden for now (Angelic, 22 Nov 2026): hidden, not removed, while a replacement is decided. */
+.hero-art
+{
+   display: none
+}
+.hero
+{
+   grid-template-columns: 1fr;
+   min-height: 0
 }

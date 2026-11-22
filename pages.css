@@ -2354,3 +2354,8 @@ body.lightbox-open { overflow: hidden; }
   .about-social-list small { grid-column:2; grid-row:2; font-size:10px; margin-top:-7px; }
   .about-social-list b { grid-column:3; grid-row:1/3; }
 }
+
+/* Hobbies link under the About fun fact (Angelic, 22 Nov 2026) */
+.about-hobbies-link { margin-top: 14px; }
+.about-hobbies-link a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.about-hobbies-link a:hover { text-decoration: underline; }
